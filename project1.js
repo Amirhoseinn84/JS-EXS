@@ -108,3 +108,6 @@ let userName = 'Amirhosein';
 console.log(userName.length);
 console.log(userName.toUpperCase());
 console.log(userName.toLowerCase());
+
+let hobbies = ['sports', 'reading'];
+console.log(hobbies[1].length);
