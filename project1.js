@@ -1,11 +1,15 @@
-let greetingText = "Hi, I'm Amirhosein!";
+// let greetingText = "Hi, I'm Amirhosein!";
 
-let userYear = 84;
+// let userYear = 84;
 
-alert(greetingText);
+// alert(greetingText);
 
-greetingText = 'Hi, I am really Amirhosein';
+// greetingText = 'Hi, I am really Amirhosein';
 
-alert(greetingText);
+// alert(greetingText);
 
-alert(userYear);
+// alert(userYear);
+
+let hobbies = ['sports', 'reading', 'cooking'];
+
+alert(hobbies);
