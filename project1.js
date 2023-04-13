@@ -26,3 +26,9 @@ let age = 18;
 let adultYears = age / 9;
 
 alert(adultYears);
+
+age = 28;
+
+adultYears = age / 2;
+
+alert(adultYears);
