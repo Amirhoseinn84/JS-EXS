@@ -107,3 +107,4 @@ console.log('AmirHosein' + ' ' + 'Halimi');
 let userName = 'Amirhosein';
 console.log(userName.length);
 console.log(userName.toUpperCase());
+console.log(userName.toLowerCase());
