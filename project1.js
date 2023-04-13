@@ -49,18 +49,32 @@
 // calculateAdultsYears();
 // alert(adultYears);
 
-let age = 18;
+// let age = 18;
 
+// let adultYears;
+// let dateYears;
+
+// function calculateAdultsYears() {
+//   return 28 - age;
+// }
+
+// adultYears = calculateAdultsYears();
+// alert(adultYears);
+
+// age = 20;
+// dateYears = calculateAdultsYears();
+// alert(dateYears);
+
+let age = 18;
 let adultYears;
 let dateYears;
 
-function calculateAdultsYears() {
-  return 28 - age;
+function calculateAdultsYears(userAge) {
+  return 28 - userAge;
 }
 
-adultYears = calculateAdultsYears();
+adultYears = calculateAdultsYears(age);
 alert(adultYears);
 
-age = 20;
-dateYears = calculateAdultsYears();
+dateYears = calculateAdultsYears(20);
 alert(dateYears);
