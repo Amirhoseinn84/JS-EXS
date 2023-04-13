@@ -99,5 +99,5 @@ result = result + 5;
 console.log(result);
 
 result = 10 * 4;
-result = result + 2;
+result += 10;
 console.log(result);
