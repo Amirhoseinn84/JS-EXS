@@ -93,3 +93,11 @@ console.log(8 - 4);
 console.log(8 * 4);
 console.log(8 / 4);
 console.log(10 % 4);
+
+let result = (10 - 3 + 5) * 10;
+result = result + 5;
+console.log(result);
+
+result = 10 * 4;
+result = result + 2;
+console.log(result);
