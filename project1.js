@@ -1,4 +1,5 @@
 let greetingText = "Hi, I'm Amirhosein!";
+
 let userYear = 84;
 
 alert(greetingText);
