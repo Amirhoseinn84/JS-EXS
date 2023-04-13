@@ -61,5 +61,6 @@ function calculateAdultsYears() {
 adultYears = calculateAdultsYears();
 alert(adultYears);
 
+age = 20;
 dateYears = calculateAdultsYears();
-alert(adultYears);
+alert(dateYears);
