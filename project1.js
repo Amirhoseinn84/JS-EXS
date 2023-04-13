@@ -21,14 +21,25 @@
 
 // alert(UserInf.job);
 
+// let age = 18;
+
+// let adultYears = age / 9;
+
+// alert(adultYears);
+
+// age = 28;
+
+// adultYears = age / 2;
+
+// alert(adultYears);
+
 let age = 18;
 
-let adultYears = age / 9;
+let adultYears;
 
-alert(adultYears);
+function calculateAdultsYears() {
+  adultYears = 28 - age;
+}
 
-age = 28;
-
-adultYears = age / 2;
-
+calculateAdultsYears();
 alert(adultYears);
