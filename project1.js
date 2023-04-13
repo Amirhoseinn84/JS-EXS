@@ -103,3 +103,7 @@ result += 10;
 console.log(result);
 
 console.log('AmirHosein' + ' ' + 'Halimi');
+
+let userName = 'Amirhosein';
+console.log(userName.length);
+console.log(userName.toUpperCase());
