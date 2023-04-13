@@ -12,4 +12,4 @@
 
 let hobbies = ['sports', 'reading', 'cooking'];
 
-alert(hobbies);
+alert(hobbies[0]);
