@@ -13,3 +13,10 @@
 let hobbies = ['sports', 'reading', 'cooking'];
 
 alert(hobbies[0]);
+
+let UserInf = {
+  job: 'Developer',
+  place: 'New York',
+};
+
+alert(UserInf.job);
