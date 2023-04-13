@@ -43,3 +43,7 @@ function calculateAdultsYears() {
 
 calculateAdultsYears();
 alert(adultYears);
+
+age = 20;
+calculateAdultsYears();
+alert(adultYears);
