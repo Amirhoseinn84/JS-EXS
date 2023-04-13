@@ -68,14 +68,14 @@
 let age = 18;
 let ageIn = 28;
 
-let adultYears;
+// let adultYears;
 let dateYears;
 
 function calculateAdultsYears(userAge, ageInput) {
   return ageInput - userAge;
 }
 
-adultYears = calculateAdultsYears(age, ageIn);
+let adultYears = calculateAdultsYears(age, ageIn);
 alert(adultYears);
 
 dateYears = calculateAdultsYears(20, 14);
