@@ -93,6 +93,7 @@ console.log(8 - 4);
 console.log(8 * 4);
 console.log(8 / 4);
 console.log(10 % 4);
+console.log(2 ** 5);
 
 let result = (10 - 3 + 5) * 10;
 result = result + 5;
@@ -103,6 +104,8 @@ result += 10;
 console.log(result);
 
 console.log('AmirHosein' + ' ' + 'Halimi');
+console.log('This is' + ' ' + 8);
+console.log('This is' + ' 6');
 
 let userName = 'Amirhosein';
 console.log(userName.length);
