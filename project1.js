@@ -10,13 +10,19 @@
 
 // alert(userYear);
 
-let hobbies = ['sports', 'reading', 'cooking'];
+// let hobbies = ['sports', 'reading', 'cooking'];
 
-alert(hobbies[0]);
+// alert(hobbies[0]);
 
-let UserInf = {
-  job: 'Developer',
-  place: 'New York',
-};
+// let UserInf = {
+//   job: 'Developer',
+//   place: 'New York',
+// };
 
-alert(UserInf.job);
+// alert(UserInf.job);
+
+let age = 18;
+
+let adultYears = age + 18;
+
+alert(adultYears);
