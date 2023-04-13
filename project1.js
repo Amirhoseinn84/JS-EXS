@@ -65,16 +65,25 @@
 // dateYears = calculateAdultsYears();
 // alert(dateYears);
 
-let age = 18;
-let ageIn = 28;
+// let age = 18;
+// let ageIn = 28;
 
-function calculateAdultsYears(userAge, ageInput) {
-  let yearsInput = ageInput - userAge;
-  return yearsInput;
-}
+// function calculateAdultsYears(userAge, ageInput) {
+//   let yearsInput = ageInput - userAge;
+//   return yearsInput;
+// }
 
-let adultYears = calculateAdultsYears(age, ageIn);
-alert(adultYears);
+// let adultYears = calculateAdultsYears(age, ageIn);
+// alert(adultYears);
 
-let dateYears = calculateAdultsYears(20, 21);
-alert(dateYears);
+// let dateYears = calculateAdultsYears(20, 21);
+// alert(dateYears);
+
+let person = {
+  name: 'Amirhosein',
+  greet() {
+    alert('Hello!');
+  },
+};
+
+person.greet();
