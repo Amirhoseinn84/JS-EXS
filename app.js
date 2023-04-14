@@ -8,6 +8,10 @@ let anchorElement = document.getElementById('external');
 
 anchorElement.href = 'https://www.google.com';
 
-let headerElement = document.getElementById('header1');
+// let headerElement = document.getElementById('header1');
 
-headerElement.textContent = 'Amirhosein';
+// headerElement.textContent = 'Amirhosein';
+
+let headElement = document.querySelector('h1');
+
+headElement.textContent = 'AmirHosein';
