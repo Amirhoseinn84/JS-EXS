@@ -32,9 +32,13 @@ console.dir(firstParagraph);
 
 firstParagraph.append(newAnchorElement);
 
-let removeHeader = document.querySelector('h1');
+// let removeHeader = document.querySelector('h1');
 
 // removeHeader.remove();
 // removeHeader.parentElement.removeChild(removeHeader);
 
 // firstParagraph.parentElement.append(firstParagraph);
+
+console.log(firstParagraph.innerHTML);
+
+firstParagraph.innerHTML = 'This is a <strong>Important!<strong/>';
