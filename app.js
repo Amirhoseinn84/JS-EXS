@@ -5,4 +5,9 @@
 // console.dir(document);
 
 let anchorElement = document.getElementById('external');
+
 anchorElement.href = 'https://www.google.com';
+
+let headerElement = document.getElementById('header1');
+
+headerElement.textContent = 'Amirhosein';
