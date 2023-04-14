@@ -21,3 +21,13 @@ let element = document.body.firstElementChild;
 element = document.body.children[1];
 
 console.dir(element);
+
+let newAnchorElement = document.createElement('a');
+newAnchorElement.href = 'https://www.google.com';
+newAnchorElement.textContent = 'This ;eads t Goolge!';
+
+let firstParagraph = document.querySelector('p');
+
+console.dir(firstParagraph);
+
+firstParagraph.append(newAnchorElement);
