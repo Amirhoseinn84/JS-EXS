@@ -1,5 +1,8 @@
-document.body.children[0].lastChild.nodeValue = 'Hi Amir';
+// document.body.children[0].lastChild.nodeValue = 'Hi Amir';
 
-document.body.children[1].children[0].href = 'https://www.google.com';
+// document.body.children[1].children[0].href = 'https://www.google.com';
 
-console.dir(document);
+// console.dir(document);
+
+let anchorElement = document.getElementById('external');
+anchorElement.href = 'https://www.google.com';
