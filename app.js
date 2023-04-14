@@ -31,3 +31,7 @@ let firstParagraph = document.querySelector('p');
 console.dir(firstParagraph);
 
 firstParagraph.append(newAnchorElement);
+
+// let removeHeader = document.querySelector('h1');
+
+// removeHeader.remove();
