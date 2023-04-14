@@ -18,7 +18,7 @@ headElement.textContent = 'AmirHosein';
 
 let element = document.body.firstElementChild;
 
-element = document.body.children[1];
+element = document.body.children[0];
 
 console.dir(element);
 
@@ -36,3 +36,5 @@ let removeHeader = document.querySelector('h1');
 
 // removeHeader.remove();
 // removeHeader.parentElement.removeChild(removeHeader);
+
+// firstParagraph.parentElement.append(firstParagraph);
