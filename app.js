@@ -32,6 +32,7 @@ console.dir(firstParagraph);
 
 firstParagraph.append(newAnchorElement);
 
-// let removeHeader = document.querySelector('h1');
+let removeHeader = document.querySelector('h1');
 
 // removeHeader.remove();
+// removeHeader.parentElement.removeChild(removeHeader);
