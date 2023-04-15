@@ -1,6 +1,8 @@
 const inputElement = document.getElementById('product-name');
 const charsElement = document.getElementById('remaining-chars');
 
+// charsElement.style.fontSize = '30px';
+
 // console.dir(inputElement);
 
 const maxChars = inputElement.maxLength;
