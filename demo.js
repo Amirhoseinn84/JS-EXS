@@ -17,6 +17,11 @@ function updateRemaining(event) {
   const characters = maxChars - enteredTextLength;
   charsElement.textContent = characters;
   // console.log(characters);
+
+  if (characters <= 10) {
+    charsElement.classList.add('classes');
+    inputElement.classList.add('classes');
+  }
 }
 
 inputElement.addEventListener('input', updateRemaining);
