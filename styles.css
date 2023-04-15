@@ -66,3 +66,11 @@ input.classes {
 #remaining-chars.classes {
   color: rgb(211, 109, 26);
 }
+
+input.error {
+  background-color: rgb(173, 204, 34);
+}
+
+#remaining-chars.error {
+  color: rgb(221, 46, 46);
+}
