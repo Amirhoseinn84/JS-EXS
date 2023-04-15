@@ -22,6 +22,9 @@ function updateRemaining(event) {
     charsElement.classList.add('classes');
     inputElement.classList.add('classes');
     // charsElement.style.fontSize = '25px';
+  } else {
+    charsElement.classList.remove('classes');
+    inputElement.classList.remove('classes');
   }
 }
 
