@@ -4,8 +4,8 @@ if (userInput != 'Amirhosein') {
   console.log('Hello!');
 }
 
-let isUserInput = true;
+let isUserInput = false;
 
-if (isUserInput) {
+if (!isUserInput) {
   console.log('User is logged in!');
 }
