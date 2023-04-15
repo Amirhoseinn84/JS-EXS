@@ -18,16 +18,18 @@ function updateRemaining(event) {
   charsElement.textContent = characters;
   // console.log(characters);
 
-  if (characters == 0) {
+  if (characters === 0) {
     charsElement.classList.add('error');
     inputElement.classList.add('error');
     // charsElement.style.fontSize = '25px';
   } else if (characters <= 10) {
     charsElement.classList.add('classes');
     inputElement.classList.add('classes');
+    charsElement.classList.remove('error');
+    inputElement.classList.remove('error');
   } else {
-    charsElement.classList.remove('classes', 'error');
-    inputElement.classList.remove('classes', 'error');
+    charsElement.classList.remove('classes');
+    inputElement.classList.remove('classes');
   }
 }
 
