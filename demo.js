@@ -11,7 +11,7 @@ function updateRemaining(event) {
   const enteredTextLength = enteredText.length;
   // console.log(enteredText);
 
-  let characters = maxChars - enteredTextLength;
+  const characters = maxChars - enteredTextLength;
   charsElement.textContent = characters;
   // console.log(characters);
 }
