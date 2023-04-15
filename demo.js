@@ -7,6 +7,7 @@ let maxChars = inputElement.maxLength;
 
 function updateRemaining(event) {
   let enteredText = event.target.value;
+  // let enteredText = inputElement.value;
   let enteredTextLength = enteredText.length;
 
   let characters = maxChars - enteredTextLength;
