@@ -21,6 +21,7 @@ function updateRemaining(event) {
   if (characters <= 10) {
     charsElement.classList.add('classes');
     inputElement.classList.add('classes');
+    // charsElement.style.fontSize = '25px';
   }
 }
 
