@@ -9,9 +9,11 @@ function updateRemaining(event) {
   let enteredText = event.target.value;
   // let enteredText = inputElement.value;
   let enteredTextLength = enteredText.length;
+  // console.log(enteredText);
 
   let characters = maxChars - enteredTextLength;
   charsElement.textContent = characters;
+  // console.log(characters);
 }
 
 inputElement.addEventListener('input', updateRemaining);
