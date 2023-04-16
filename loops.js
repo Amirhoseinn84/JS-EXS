@@ -58,16 +58,14 @@ displayUserDataButtonElement.addEventListener('click', displayUserData);
 /////
 
 const rollDiceButtonElement = document.querySelector('#statistics button');
+const targetNumberInputElement = document.getElementById('user-target-number');
+const diceRollsListElement = document.getElementById('dice-rolls');
 
 function rollDice() {
-  return Math.floor(Math.random() * 6) + 1; // Math.floor(): 5.64 => 5
+  return Math.floor(Math.random() * 6) + 1;
 }
 
 function deriveNumberOfDiceRolls() {
-  const targetNumberInputElement =
-    document.getElementById('user-target-number');
-  const diceRollsListElement = document.getElementById('dice-rolls');
-
   const enteredNumber = targetNumberInputElement.value;
   diceRollsListElement.innerHTML = '';
 
