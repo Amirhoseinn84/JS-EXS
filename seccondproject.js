@@ -1,1 +1,1 @@
-console.log(hobbies[1]);
+console.log(hobbies[0]);
