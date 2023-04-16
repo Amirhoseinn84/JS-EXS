@@ -29,3 +29,26 @@ function hgihlightLinks() {
 }
 
 highlightLinksButtonElement.addEventListener('click', hgihlightLinks);
+
+/////
+
+const dummyUserData = {
+  firstname: 'Amirhoein',
+  lastname: 'Halimi',
+  Age: 18,
+};
+
+const displayUserDataButtonElement =
+  document.querySelector('#user-data button');
+const outputDataElement = document.getElementById('output-user-data');
+
+function displayUserData() {
+  for (const key in dummyUserData) {
+    const newUserDataList = document.createElement('li');
+    const outputText = key.toUpperCase() + ': ' + dummyUserData[key];
+    newUserDataList.textContent = outputText;
+    outputDataElement.append(newUserDataList);
+  }
+}
+
+displayUserDataButtonElement.addEventListener('click', displayUserData);
