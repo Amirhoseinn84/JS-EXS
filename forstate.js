@@ -2,10 +2,10 @@ for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 
-const userInput = ['Amirhosein', 'Arshiya', 'Alireza'];
+const userInput = ['Amirhosein', 'Arshiya'];
 
-for (const namee of userInput) {
-  console.log(namee);
+for (const userName of userInput) {
+  console.log(userName);
 }
 
 const loggedUser = {
