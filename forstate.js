@@ -16,4 +16,5 @@ const loggedUser = {
 
 for (const nameUser in loggedUser) {
   console.log(nameUser);
+  console.log(loggedUser[nameUser]);
 }
