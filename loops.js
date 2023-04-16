@@ -43,6 +43,8 @@ const displayUserDataButtonElement =
 const outputDataElement = document.getElementById('output-user-data');
 
 function displayUserData() {
+  outputDataElement.innerHTML = '';
+
   for (const key in dummyUserData) {
     const newUserDataList = document.createElement('li');
     const outputText = key.toUpperCase() + ': ' + dummyUserData[key];
