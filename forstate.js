@@ -4,6 +4,16 @@ for (let i = 0; i < 10; i++) {
 
 const userInput = ['Amirhosein', 'Arshiya', 'Alireza'];
 
-for (const name of userInput) {
-  console.log(name);
+for (const namee of userInput) {
+  console.log(namee);
+}
+
+const loggedUser = {
+  name: 'Amirhosein',
+  Age: 18,
+  isLoggedIn: true,
+};
+
+for (const nameUser in loggedUser) {
+  console.log(nameUser);
 }
