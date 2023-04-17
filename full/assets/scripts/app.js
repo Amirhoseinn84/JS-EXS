@@ -29,15 +29,20 @@ let calNum = add(8, 4);
 const defaultResult = 0;
 let currentResult = defaultResult;
 
+function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
+  const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
+  outputResult(currentResult, calcDescription);
+}
+
 function getUserData() {
   return parseInt(userInput.value);
 }
 
 function add2() {
   const enteredNumber = getUserData();
-  const calcDescription = `${currentResult} + ${enteredNumber}`;
+  const initialResult = currentResult;
   currentResult = currentResult + enteredNumber;
-  outputResult(currentResult, calcDescription);
+  createAndWriteOutput('+', initialResult, enteredNumber);
 }
 
 addBtn.addEventListener('click', add2);
