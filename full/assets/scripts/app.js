@@ -29,9 +29,14 @@ let calNum = add(8, 4);
 const defaultResult = 0;
 let currentResult = defaultResult;
 
+function getUserData() {
+  return parseInt(userInput.value);
+}
+
 function add2() {
-  const calcDescription = `${currentResult} + ${userInput.value}`;
-  currentResult = currentResult + parseInt(userInput.value);
+  const enteredNumber = getUserData();
+  const calcDescription = `${currentResult} + ${enteredNumber}`;
+  currentResult = currentResult + parseInt(enteredNumber);
   outputResult(currentResult, calcDescription);
 }
 
