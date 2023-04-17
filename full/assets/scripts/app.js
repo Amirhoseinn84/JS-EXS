@@ -24,4 +24,14 @@ function add(num1, num2) {
 let calNum = add(8, 4);
 // console.log(calNum);
 
-outputResult(calNum, userData);
+// outputResult(calNum, userData);
+
+const defaultResult = 0;
+let currentResult = defaultResult;
+
+function add2() {
+  currentResult = currentResult + parseInt(userInput.value);
+  outputResult(currentResult, '');
+}
+
+addBtn.addEventListener('click', add2);
