@@ -10,10 +10,10 @@ let textInput = 'error' + ' ' + 'occured!';
 
 outputResult(textInput, userData);
 
-function userName(name) {
-  let nameUser = 'Hi!' + ' ' + name;
+function userName(name, last) {
+  let nameUser = 'Hi!' + ' ' + name + ' ' + last;
   return nameUser;
 }
 
-let inpuUser = userName('Amirhosein');
+let inpuUser = userName('Amirhosein', 'Halimi');
 console.log(inpuUser);
