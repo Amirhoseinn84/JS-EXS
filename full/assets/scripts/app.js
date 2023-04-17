@@ -41,28 +41,28 @@ function getUserData() {
 function add() {
   const enteredNumber = getUserData();
   const initialResult = currentResult;
-  currentResult = currentResult + enteredNumber;
+  currentResult += enteredNumber;
   createAndWriteOutput('+', initialResult, enteredNumber);
 }
 
 function sub() {
   const enteredNumber = getUserData();
   const initialResult = currentResult;
-  currentResult = currentResult - enteredNumber;
+  currentResult -= enteredNumber;
   createAndWriteOutput('-', initialResult, enteredNumber);
 }
 
 function mul() {
   const enteredNumber = getUserData();
   const initialResult = currentResult;
-  currentResult = currentResult * enteredNumber;
+  currentResult *= enteredNumber;
   createAndWriteOutput('*', initialResult, enteredNumber);
 }
 
 function div() {
   const enteredNumber = getUserData();
   const initialResult = currentResult;
-  currentResult = currentResult / enteredNumber;
+  currentResult /= enteredNumber;
   createAndWriteOutput('/', initialResult, enteredNumber);
 }
 
