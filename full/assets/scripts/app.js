@@ -16,12 +16,12 @@ function userName(name, last) {
 let inpuUser = userName('Amirhosein', 'Halimi');
 console.log(inpuUser);
 
-function add(num1, num2) {
+function addd(num1, num2) {
   let calculateNum = num1 + num2;
   return calculateNum;
 }
 
-let calNum = add(8, 4);
+let calNum = addd(8, 4);
 // console.log(calNum);
 
 // outputResult(calNum, userData);
@@ -38,7 +38,7 @@ function getUserData() {
   return parseInt(userInput.value);
 }
 
-function add2() {
+function add() {
   const enteredNumber = getUserData();
   const initialResult = currentResult;
   currentResult = currentResult + enteredNumber;
@@ -66,7 +66,7 @@ function div() {
   createAndWriteOutput('/', initialResult, enteredNumber);
 }
 
-addBtn.addEventListener('click', add2);
+addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', sub);
 multiplyBtn.addEventListener('click', mul);
 divideBtn.addEventListener('click', div);
