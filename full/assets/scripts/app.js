@@ -16,4 +16,4 @@ function userName(name, last) {
   return nameUser;
 }
 
-let inpuUser = userName('Amirhosein', 'Halimi');
+userName('Amirhosein', 'Halimi');
