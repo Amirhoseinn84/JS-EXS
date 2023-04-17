@@ -1,7 +1,9 @@
 let calculateNum = 2;
 
-calculateNum *= 4;
+calculateNum += 4;
 
-let userData = `(${calculateNum} * 20)`;
+// let userData = `(${calculateNum} * 20)`;
+
+let userData = '(' + calculateNum * 2 + ')';
 
 outputResult(calculateNum, userData);
