@@ -70,3 +70,14 @@ addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', sub);
 multiplyBtn.addEventListener('click', mul);
 divideBtn.addEventListener('click', div);
+
+// let arraies = [];
+// arraies = [1, 2, 3, 4];
+
+// console.log(arraies[1]);
+
+let arraies = [1, 2, 3];
+
+arraies.push(8, 9);
+
+console.log(arraies);
