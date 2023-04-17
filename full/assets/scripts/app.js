@@ -8,12 +8,12 @@ let userData = '(' + calculateNum * 2 + ')';
 
 let textInput = 'error' + ' ' + 'occured!';
 
-outputResult('', userData);
+outputResult(userName('Amirhosein', 'Halimi'), userData);
 
 function userName(name, last) {
   let nameUser = 'Hi!' + ' ' + name + ' ' + last;
-  console.log(nameUser);
   return nameUser;
 }
 
-userName('Amirhosein', 'Halimi');
+let inpuUser = userName('Amirhosein', 'Halimi');
+console.log(inpuUser);
