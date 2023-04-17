@@ -94,6 +94,8 @@ subtractBtn.addEventListener('click', sub);
 multiplyBtn.addEventListener('click', mul);
 divideBtn.addEventListener('click', div);
 
+//////////////////////////////
+
 // let arraies = [];
 // arraies = [1, 2, 3, 4];
 
