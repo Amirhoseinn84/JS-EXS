@@ -1,5 +1,7 @@
-let calculateNum = 0;
+let calculateNum = 2;
 
-calculateNum += 10;
+calculateNum *= 4;
 
-outputResult(calculateNum, '');
+let userData = '(' + calculateNum * 20 + ')';
+
+outputResult(calculateNum, userData);
