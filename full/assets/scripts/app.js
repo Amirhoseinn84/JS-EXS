@@ -45,4 +45,12 @@ function add2() {
   createAndWriteOutput('+', initialResult, enteredNumber);
 }
 
+function sub() {
+  const enteredNumber = getUserData();
+  const initialResult = currentResult;
+  currentResult = currentResult - enteredNumber;
+  createAndWriteOutput('-', initialResult, enteredNumber);
+}
+
 addBtn.addEventListener('click', add2);
+subtractBtn.addEventListener('click', sub);
