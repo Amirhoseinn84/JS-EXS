@@ -52,6 +52,7 @@ function add() {
   };
   addArray.push(logEntry);
   console.log(addArray);
+  console.log(logEntry.operation);
 }
 
 function sub() {
