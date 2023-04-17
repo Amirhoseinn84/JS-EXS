@@ -44,7 +44,13 @@ function add() {
   const initialResult = currentResult;
   currentResult += enteredNumber;
   createAndWriteOutput('+', initialResult, enteredNumber);
-  addArray.push(enteredNumber);
+  const logEntry = {
+    operation: 'ADD',
+    prevResult: initialResult,
+    number: enteredNumber,
+    result: currentResult,
+  };
+  addArray.push(logEntry);
   console.log(addArray);
 }
 
@@ -53,7 +59,13 @@ function sub() {
   const initialResult = currentResult;
   currentResult -= enteredNumber;
   createAndWriteOutput('-', initialResult, enteredNumber);
-  addArray.push(enteredNumber);
+  const logEntry = {
+    operation: 'SUB',
+    prevResult: initialResult,
+    number: enteredNumber,
+    result: currentResult,
+  };
+  addArray.push(logEntry);
   console.log(addArray);
 }
 
@@ -62,7 +74,13 @@ function mul() {
   const initialResult = currentResult;
   currentResult *= enteredNumber;
   createAndWriteOutput('*', initialResult, enteredNumber);
-  addArray.push(enteredNumber);
+  const logEntry = {
+    operation: 'Multi',
+    prevResult: initialResult,
+    number: enteredNumber,
+    result: currentResult,
+  };
+  addArray.push(logEntry);
   console.log(addArray);
 }
 
@@ -71,7 +89,13 @@ function div() {
   const initialResult = currentResult;
   currentResult /= enteredNumber;
   createAndWriteOutput('/', initialResult, enteredNumber);
-  addArray.push(enteredNumber);
+  const logEntry = {
+    operation: 'DIVIDE',
+    prevResult: initialResult,
+    number: enteredNumber,
+    result: currentResult,
+  };
+  addArray.push(logEntry);
   console.log(addArray);
 }
 
