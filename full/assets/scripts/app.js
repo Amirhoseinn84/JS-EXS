@@ -8,4 +8,4 @@ let userData = '(' + calculateNum * 2 + ')';
 
 let textInput = 'error' + ' ' + 'occured!';
 
-outputResult(calculateNum, textInput);
+outputResult(textInput, userData);
