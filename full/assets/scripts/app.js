@@ -30,6 +30,22 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 let addArray = [];
 
+function getToWrite(
+  operationIdentifier,
+  prevResult,
+  operationNumber,
+  newResult
+) {
+  const logEntry = {
+    operation: operationIdentifier,
+    prevResult: prevResult,
+    number: operationNumber,
+    result: newResult,
+  };
+  addArray.push(logEntry);
+  console.log(addArray);
+}
+
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
   const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
   outputResult(currentResult, calcDescription);
@@ -44,15 +60,7 @@ function add() {
   const initialResult = currentResult;
   currentResult += enteredNumber;
   createAndWriteOutput('+', initialResult, enteredNumber);
-  const logEntry = {
-    operation: 'ADD',
-    prevResult: initialResult,
-    number: enteredNumber,
-    result: currentResult,
-  };
-  addArray.push(logEntry);
-  console.log(addArray);
-  console.log(logEntry.operation);
+  getToWrite('ADD', initialResult, enteredNumber, currentResult);
 }
 
 function sub() {
@@ -60,14 +68,7 @@ function sub() {
   const initialResult = currentResult;
   currentResult -= enteredNumber;
   createAndWriteOutput('-', initialResult, enteredNumber);
-  const logEntry = {
-    operation: 'SUB',
-    prevResult: initialResult,
-    number: enteredNumber,
-    result: currentResult,
-  };
-  addArray.push(logEntry);
-  console.log(addArray);
+  getToWrite('SUBTRACT', initialResult, enteredNumber, currentResult);
 }
 
 function mul() {
@@ -75,14 +76,7 @@ function mul() {
   const initialResult = currentResult;
   currentResult *= enteredNumber;
   createAndWriteOutput('*', initialResult, enteredNumber);
-  const logEntry = {
-    operation: 'Multi',
-    prevResult: initialResult,
-    number: enteredNumber,
-    result: currentResult,
-  };
-  addArray.push(logEntry);
-  console.log(addArray);
+  getToWrite('MULTI', initialResult, enteredNumber, currentResult);
 }
 
 function div() {
@@ -90,14 +84,7 @@ function div() {
   const initialResult = currentResult;
   currentResult /= enteredNumber;
   createAndWriteOutput('/', initialResult, enteredNumber);
-  const logEntry = {
-    operation: 'DIVIDE',
-    prevResult: initialResult,
-    number: enteredNumber,
-    result: currentResult,
-  };
-  addArray.push(logEntry);
-  console.log(addArray);
+  getToWrite('DIVIDE', initialResult, enteredNumber, currentResult);
 }
 
 addBtn.addEventListener('click', add);
