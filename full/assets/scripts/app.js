@@ -26,6 +26,8 @@ let calNum = addd(8, 4);
 
 // outputResult(calNum, userData);
 
+////////////////////////////////
+
 const defaultResult = 0;
 let currentResult = defaultResult;
 let addArray = [];
