@@ -28,6 +28,7 @@ let calNum = addd(8, 4);
 
 const defaultResult = 0;
 let currentResult = defaultResult;
+let addArray = [];
 
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
   const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
@@ -43,6 +44,8 @@ function add() {
   const initialResult = currentResult;
   currentResult += enteredNumber;
   createAndWriteOutput('+', initialResult, enteredNumber);
+  addArray.push(enteredNumber);
+  console.log(addArray);
 }
 
 function sub() {
@@ -50,6 +53,8 @@ function sub() {
   const initialResult = currentResult;
   currentResult -= enteredNumber;
   createAndWriteOutput('-', initialResult, enteredNumber);
+  addArray.push(enteredNumber);
+  console.log(addArray);
 }
 
 function mul() {
@@ -57,6 +62,8 @@ function mul() {
   const initialResult = currentResult;
   currentResult *= enteredNumber;
   createAndWriteOutput('*', initialResult, enteredNumber);
+  addArray.push(enteredNumber);
+  console.log(addArray);
 }
 
 function div() {
@@ -64,6 +71,8 @@ function div() {
   const initialResult = currentResult;
   currentResult /= enteredNumber;
   createAndWriteOutput('/', initialResult, enteredNumber);
+  addArray.push(enteredNumber);
+  console.log(addArray);
 }
 
 addBtn.addEventListener('click', add);
