@@ -36,7 +36,7 @@ function getUserData() {
 function add2() {
   const enteredNumber = getUserData();
   const calcDescription = `${currentResult} + ${enteredNumber}`;
-  currentResult = currentResult + parseInt(enteredNumber);
+  currentResult = currentResult + enteredNumber;
   outputResult(currentResult, calcDescription);
 }
 
