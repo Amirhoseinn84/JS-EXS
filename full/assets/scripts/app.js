@@ -8,7 +8,7 @@ let userData = '(' + calculateNum * 2 + ')';
 
 let textInput = 'error' + ' ' + 'occured!';
 
-outputResult(textInput, userData);
+outputResult(userName('Amirhosein', 'Halimi'), userData);
 
 function userName(name, last) {
   let nameUser = 'Hi!' + ' ' + name + ' ' + last;
