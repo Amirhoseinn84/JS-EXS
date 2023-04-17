@@ -30,6 +30,15 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 let addArray = [];
 
+function getUserData() {
+  return parseInt(userInput.value);
+}
+
+function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
+  const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
+  outputResult(currentResult, calcDescription);
+}
+
 function getToWrite(
   operationIdentifier,
   prevResult,
@@ -44,15 +53,6 @@ function getToWrite(
   };
   addArray.push(logEntry);
   console.log(addArray);
-}
-
-function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
-  const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
-  outputResult(currentResult, calcDescription);
-}
-
-function getUserData() {
-  return parseInt(userInput.value);
 }
 
 function add() {
