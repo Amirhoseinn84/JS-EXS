@@ -2,9 +2,9 @@ let calculateNum = 2;
 
 calculateNum += 4;
 
-// let userData = `(${calculateNum} * 20)`;
+// let userData = '(' + calculateNum * 4 + ')';
 
-let userData = '(' + calculateNum * 4 + ')';
+let userData = `(${calculateNum} * 20)`;
 
 let textInput = 'error' + ' ' + 'occured!';
 
@@ -22,6 +22,6 @@ function add(num1, num2) {
 }
 
 let calNum = add(8, 4);
-console.log(calNum);
+// console.log(calNum);
 
 outputResult(calNum, userData);
