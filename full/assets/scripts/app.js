@@ -52,5 +52,21 @@ function sub() {
   createAndWriteOutput('-', initialResult, enteredNumber);
 }
 
+function mul() {
+  const enteredNumber = getUserData();
+  const initialResult = currentResult;
+  currentResult = currentResult * enteredNumber;
+  createAndWriteOutput('*', initialResult, enteredNumber);
+}
+
+function div() {
+  const enteredNumber = getUserData();
+  const initialResult = currentResult;
+  currentResult = currentResult / enteredNumber;
+  createAndWriteOutput('/', initialResult, enteredNumber);
+}
+
 addBtn.addEventListener('click', add2);
 subtractBtn.addEventListener('click', sub);
+multiplyBtn.addEventListener('click', mul);
+divideBtn.addEventListener('click', div);
