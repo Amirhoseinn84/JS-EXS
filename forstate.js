@@ -55,25 +55,25 @@ while (!finished) {
 //   j++;
 // }
 
-let k = 0;
-
-do {
-  console.log('Outer', k);
-  for (let H = 0; H < 5; H++) {
-    if (H === 3) {
-      break;
-    }
-    console.log('Inner', k);
-  }
-  k++;
-} while (k < 4);
-
 for (i = 0; i < 5; i++) {
   if (i === 3) {
     continue;
   }
   console.log(i);
 }
+
+let k = 0;
+
+outerWhile: do {
+  console.log('Outer', k);
+  for (let H = 0; H < 5; H++) {
+    if (H === 3) {
+      break outerWhile;
+    }
+    console.log('Inner', k);
+  }
+  k++;
+} while (k < 4);
 
 // let isFinished = false;
 
