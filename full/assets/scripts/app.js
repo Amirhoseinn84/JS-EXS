@@ -32,6 +32,9 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 let addArray = [];
 
+const CALC_ADD = 'ADD';
+const CALC_SUB = 'SUBTRACT';
+
 function getUserData() {
   return parseInt(userInput.value);
 }
@@ -60,8 +63,8 @@ function getToWrite(
 function calculateResult(calculationType) {
   const enteredNumber = getUserData();
   if (
-    (calculationType !== 'ADD' &&
-      calculationType !== 'SUBTRACT' &&
+    (calculationType !== CALC_ADD &&
+      calculationType !== CALC_SUB &&
       calculationType !== 'MULTI' &&
       calculationType !== 'DIVIDE') ||
     // enteredNumber === 0
@@ -80,10 +83,10 @@ function calculateResult(calculationType) {
   const initialResult = currentResult;
   let mathOperator;
 
-  if (calculationType === 'ADD') {
+  if (calculationType === CALC_ADD) {
     currentResult += enteredNumber;
     mathOperator = '+';
-  } else if (calculationType === 'SUBTRACT') {
+  } else if (calculationType === CALC_SUB) {
     currentResult -= enteredNumber;
     mathOperator = '-';
   } else if (calculationType === 'MULTI') {
@@ -99,7 +102,7 @@ function calculateResult(calculationType) {
 }
 
 function add() {
-  calculateResult('ADD');
+  calculateResult(CALC_ADD);
   // const enteredNumber = getUserData();
   // const initialResult = currentResult;
   // currentResult += enteredNumber;
@@ -108,7 +111,7 @@ function add() {
 }
 
 function sub() {
-  calculateResult('SUBTRACT');
+  calculateResult(CALC_SUB);
   // const enteredNumber = getUserData();
   // const initialResult = currentResult;
   // currentResult -= enteredNumber;
