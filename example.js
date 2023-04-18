@@ -1,10 +1,17 @@
-const userInput = 'Amirhosein';
+const userInput = 'Amirhoseinn';
 
-if (userInput === 'Amirhoseinn') {
-  console.log('Hello!');
+if (userInput === 'Amirhosein') {
+  for (let i = 0; i < 10; i++) {
+    console.log(i);
+  }
 } else if (userInput === 'Amirr') {
-  console.log('Done!');
+  for (let i = 0; i < 20; i++) {
+    console.log(i);
+  }
 } else {
+  for (let i = 0; i < 6; i++) {
+    console.log(i);
+  }
   console.log('Failed!');
 }
 
