@@ -83,19 +83,38 @@ function calculateResult(calculationType) {
   const initialResult = currentResult;
   let mathOperator;
 
-  if (calculationType === CALC_ADD) {
-    currentResult += enteredNumber;
-    mathOperator = '+';
-  } else if (calculationType === CALC_SUB) {
-    currentResult -= enteredNumber;
-    mathOperator = '-';
-  } else if (calculationType === 'MULTI') {
-    currentResult *= enteredNumber;
-    mathOperator = '*';
-  } else if (calculationType === 'DIVIDE') {
-    currentResult /= enteredNumber;
-    mathOperator = '/';
+  switch (calculationType) {
+    case CALC_ADD:
+      currentResult += enteredNumber;
+      mathOperator = '+';
+      break;
+    case CALC_SUB:
+      currentResult -= enteredNumber;
+      mathOperator = '-';
+      break;
+    case 'MULTI':
+      currentResult *= enteredNumber;
+      mathOperator = '*';
+      break;
+    case 'DIVIDE':
+      currentResult /= enteredNumber;
+      mathOperator = '/';
+      break;
   }
+
+  // if (calculationType === CALC_ADD) {
+  //   currentResult += enteredNumber;
+  //   mathOperator = '+';
+  // } else if (calculationType === CALC_SUB) {
+  //   currentResult -= enteredNumber;
+  //   mathOperator = '-';
+  // } else if (calculationType === 'MULTI') {
+  //   currentResult *= enteredNumber;
+  //   mathOperator = '*';
+  // } else if (calculationType === 'DIVIDE') {
+  //   currentResult /= enteredNumber;
+  //   mathOperator = '/';
+  // }
 
   createAndWriteOutput(mathOperator, initialResult, enteredNumber);
   getToWrite(calculationType, initialResult, enteredNumber, currentResult);
