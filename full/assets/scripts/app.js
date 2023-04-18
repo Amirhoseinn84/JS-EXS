@@ -58,6 +58,22 @@ function getToWrite(
 }
 
 function calculateResult(calculationType) {
+  if (
+    calculationType !== 'ADD' &&
+    calculationType !== 'SUBTRACT' &&
+    calculationType !== 'MULTI' &&
+    calculationType !== 'DIVIDE'
+  ) {
+    return;
+  }
+
+  // if (
+  //   calculationType === 'ADD' ||
+  //   calculationType === 'SUBTRACT' ||
+  //   calculationType === 'MULTI' ||
+  //   calculationType === 'DIVIDE'
+  // ) {}
+
   const enteredNumber = getUserData();
   const initialResult = currentResult;
   let mathOperator;
