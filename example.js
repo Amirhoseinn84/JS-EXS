@@ -1,7 +1,11 @@
-const userInput = 'Amir';
+const userInput = 'Amirhosein';
 
-if (userInput != 'Amirhosein') {
+if (userInput === 'Amirhoseinn') {
   console.log('Hello!');
+} else if (userInput === 'Amirr') {
+  console.log('Done!');
+} else {
+  console.log('Failed!');
 }
 
 let isUserInput = false;
