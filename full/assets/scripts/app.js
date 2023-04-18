@@ -100,6 +100,8 @@ function calculateResult(calculationType) {
       currentResult /= enteredNumber;
       mathOperator = '/';
       break;
+    default:
+      logEntry = {};
   }
 
   // if (calculationType === CALC_ADD) {
