@@ -64,7 +64,8 @@ function calculateResult(calculationType) {
       calculationType !== 'SUBTRACT' &&
       calculationType !== 'MULTI' &&
       calculationType !== 'DIVIDE') ||
-    enteredNumber === 0
+    // enteredNumber === 0
+    !enteredNumber
   ) {
     return;
   }
