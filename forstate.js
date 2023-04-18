@@ -24,7 +24,7 @@ for (const nameUser in loggedUser) {
   console.log(loggedUser[nameUser]);
 }
 
-let isFinished = false;
+// let isFinished = false;
 
 // while (!isFinished) {
 //   isFinished = confirm('Do you want to quit?');
