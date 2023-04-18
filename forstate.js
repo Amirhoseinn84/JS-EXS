@@ -35,6 +35,25 @@ for (const userInputt of userInput) {
   i++;
 }
 
+let randomNumbers = [];
+let finished = false;
+
+while (!finished) {
+  const rndNumber = Math.random();
+  randomNumbers.push(rndNumber);
+  if (rndNumber > 0.5) {
+    finished = true;
+    console.log(randomNumbers);
+  }
+}
+
+// let j = 0;
+
+// while (j < 3) {
+//   console.log('------------');
+//   i++;
+// }
+
 // let isFinished = false;
 
 // while (!isFinished) {
