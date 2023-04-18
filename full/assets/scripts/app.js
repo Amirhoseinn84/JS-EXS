@@ -57,20 +57,38 @@ function getToWrite(
   console.log(addArray);
 }
 
-function add() {
+function calculateResult(calculationType) {
   const enteredNumber = getUserData();
   const initialResult = currentResult;
-  currentResult += enteredNumber;
-  createAndWriteOutput('+', initialResult, enteredNumber);
-  getToWrite('ADD', initialResult, enteredNumber, currentResult);
+  let mathOperator;
+  if (calculationType == 'ADD') {
+    currentResult += enteredNumber;
+    mathOperator = '+';
+  } else {
+    currentResult -= enteredNumber;
+    mathOperator = '-';
+  }
+
+  createAndWriteOutput(mathOperator, initialResult, enteredNumber);
+  getToWrite(calculationType, initialResult, enteredNumber, currentResult);
+}
+
+function add() {
+  calculateResult('ADD');
+  // const enteredNumber = getUserData();
+  // const initialResult = currentResult;
+  // currentResult += enteredNumber;
+  // createAndWriteOutput('+', initialResult, enteredNumber);
+  // getToWrite('ADD', initialResult, enteredNumber, currentResult);
 }
 
 function sub() {
-  const enteredNumber = getUserData();
-  const initialResult = currentResult;
-  currentResult -= enteredNumber;
-  createAndWriteOutput('-', initialResult, enteredNumber);
-  getToWrite('SUBTRACT', initialResult, enteredNumber, currentResult);
+  calculateResult('SUBTRACT');
+  // const enteredNumber = getUserData();
+  // const initialResult = currentResult;
+  // currentResult -= enteredNumber;
+  // createAndWriteOutput('-', initialResult, enteredNumber);
+  // getToWrite('SUBTRACT', initialResult, enteredNumber, currentResult);
 }
 
 function mul() {
