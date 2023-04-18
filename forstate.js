@@ -60,6 +60,9 @@ let k = 0;
 do {
   console.log('Outer', k);
   for (let H = 0; H < 5; H++) {
+    if (H === 3) {
+      break;
+    }
     console.log('Inner', k);
   }
   k++;
