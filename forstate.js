@@ -20,8 +20,9 @@ const loggedUser = {
 };
 
 for (const nameUser in loggedUser) {
-  console.log(nameUser);
-  console.log(loggedUser[nameUser]);
+  // console.log(nameUser);
+  // console.log(loggedUser[nameUser]);
+  console.log(`${nameUser} => ${loggedUser[nameUser]}`);
 }
 
 // let isFinished = false;
