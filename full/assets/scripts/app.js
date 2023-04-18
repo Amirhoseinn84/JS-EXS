@@ -61,12 +61,18 @@ function calculateResult(calculationType) {
   const enteredNumber = getUserData();
   const initialResult = currentResult;
   let mathOperator;
-  if (calculationType == 'ADD') {
+  if (calculationType === 'ADD') {
     currentResult += enteredNumber;
     mathOperator = '+';
-  } else {
+  } else if (calculationType === 'SUBTRACT') {
     currentResult -= enteredNumber;
     mathOperator = '-';
+  } else if (calculationType === 'MULTI') {
+    currentResult *= enteredNumber;
+    mathOperator = '*';
+  } else if (calculationType === 'DIVIDE') {
+    currentResult /= enteredNumber;
+    mathOperator = '/';
   }
 
   createAndWriteOutput(mathOperator, initialResult, enteredNumber);
@@ -92,19 +98,21 @@ function sub() {
 }
 
 function mul() {
-  const enteredNumber = getUserData();
-  const initialResult = currentResult;
-  currentResult *= enteredNumber;
-  createAndWriteOutput('*', initialResult, enteredNumber);
-  getToWrite('MULTI', initialResult, enteredNumber, currentResult);
+  calculateResult('MULTI');
+  // const enteredNumber = getUserData();
+  // const initialResult = currentResult;
+  // currentResult *= enteredNumber;
+  // createAndWriteOutput('*', initialResult, enteredNumber);
+  // getToWrite('MULTI', initialResult, enteredNumber, currentResult);
 }
 
 function div() {
-  const enteredNumber = getUserData();
-  const initialResult = currentResult;
-  currentResult /= enteredNumber;
-  createAndWriteOutput('/', initialResult, enteredNumber);
-  getToWrite('DIVIDE', initialResult, enteredNumber, currentResult);
+  calculateResult('DIVIDE');
+  // const enteredNumber = getUserData();
+  // const initialResult = currentResult;
+  // currentResult /= enteredNumber;
+  // createAndWriteOutput('/', initialResult, enteredNumber);
+  // getToWrite('DIVIDE', initialResult, enteredNumber, currentResult);
 }
 
 addBtn.addEventListener('click', add);
