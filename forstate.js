@@ -25,6 +25,16 @@ for (const nameUser in loggedUser) {
   console.log(`${nameUser} => ${loggedUser[nameUser]}`);
 }
 
+let i = 0;
+
+for (const userInputt of userInput) {
+  console.log(`#${i}`);
+  for (const nameUser in loggedUser) {
+    console.log(`${nameUser} => ${loggedUser[nameUser]}`);
+  }
+  i++;
+}
+
 // let isFinished = false;
 
 // while (!isFinished) {
