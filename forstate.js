@@ -2,6 +2,11 @@ for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 
+for (let i = 0; i >= 10; ) {
+  i--;
+  console.log(i);
+}
+
 const userInput = ['Amirhosein', 'Arshiya'];
 
 for (const userName of userInput) {
@@ -21,8 +26,8 @@ for (const nameUser in loggedUser) {
 
 let isFinished = false;
 
-while (!isFinished) {
-  isFinished = confirm('Do you want to quit?');
-}
+// while (!isFinished) {
+//   isFinished = confirm('Do you want to quit?');
+// }
 
-console.log('done');
+// console.log('done');
