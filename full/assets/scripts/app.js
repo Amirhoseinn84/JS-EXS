@@ -151,3 +151,11 @@ let arraies = [1, 2, 3];
 arraies.push(8, 9);
 
 console.log(arraies);
+
+let namee = parseInt('2');
+
+if (!isNaN(namee)) {
+  console.log('Done!');
+} else {
+  console.log('Failed!');
+}
