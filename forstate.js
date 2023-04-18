@@ -55,12 +55,15 @@ while (!finished) {
 //   j++;
 // }
 
-// let k = 0;
+let k = 0;
 
-// do {
-//   console.log(k);
-//   k++;
-// } while (k < 4);
+do {
+  console.log('Outer', k);
+  for (let H = 0; H < 5; H++) {
+    console.log('Inner', k);
+  }
+  k++;
+} while (k < 4);
 
 for (i = 0; i < 5; i++) {
   if (i === 3) {
