@@ -48,19 +48,26 @@ while (!finished) {
   }
 }
 
-let j = 0;
+// let j = 0;
 
-while (j < 3) {
-  console.log('------------');
-  j++;
+// while (j < 3) {
+//   console.log('------------');
+//   j++;
+// }
+
+// let k = 0;
+
+// do {
+//   console.log(k);
+//   k++;
+// } while (k < 4);
+
+for (i = 0; i < 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+  console.log(i);
 }
-
-let k = 0;
-
-do {
-  console.log(k);
-  k++;
-} while (k < 4);
 
 // let isFinished = false;
 
