@@ -25,7 +25,7 @@ for (const nameUser in loggedUser) {
   console.log(`${nameUser} => ${loggedUser[nameUser]}`);
 }
 
-let i = 0;
+let i = 1;
 
 for (const userInputt of userInput) {
   console.log(`#${i}`);
