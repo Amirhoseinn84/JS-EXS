@@ -19,11 +19,11 @@ const loggedUser = {
   isLoggedIn: true,
 };
 
-for (const nameUser in loggedUser) {
-  // console.log(nameUser);
-  // console.log(loggedUser[nameUser]);
-  console.log(`${nameUser} => ${loggedUser[nameUser]}`);
-}
+// for (const nameUser in loggedUser) {
+//   // console.log(nameUser);
+//   // console.log(loggedUser[nameUser]);
+//   console.log(`${nameUser} => ${loggedUser[nameUser]}`);
+// }
 
 let i = 1;
 
@@ -33,6 +33,7 @@ for (const userInputt of userInput) {
     console.log(`${nameUser} => ${loggedUser[nameUser]}`);
   }
   i++;
+  break;
 }
 
 let randomNumbers = [];
