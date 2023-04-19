@@ -92,9 +92,9 @@ startGameBtn.addEventListener('click', () => {
 
 // startGameBtn.addEventListener('click', playerCHoice);
 
-const func = (a, b) => a + b;
+const func = (a, b = 7) => a + b;
 
-console.log(func(3, 4));
+console.log(func(3));
 
 let h = 4;
 
