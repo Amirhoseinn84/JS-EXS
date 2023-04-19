@@ -130,11 +130,39 @@ const combine = (resultHandler, operation, ...number) => {
 //   resultHandler(sum);
 // };
 
-const showResult = (result) => {
-  alert('The result after adding all numbers is: ' + result);
+const showResult = (messeageText, result) => {
+  alert(messeageText + '' + result);
 };
 
 // console.log(sumUP([0, 1, 5, 10, 20]));
-combine(showResult, 'ADD', 0, 1, 6, 10, 20, 50);
-combine(showResult, 'SUBTRACT', 0, 1, 5, 10, 20, 50);
+combine(
+  showResult.bind(this, 'The result after adding all numbers'),
+  'ADD',
+  0,
+  1,
+  6,
+  10,
+  20,
+  50
+);
+combine(
+  showResult.bind(this, 'The result after adding all numbers'),
+  'ADD',
+  0,
+  1,
+  6,
+  10,
+  'jhfjd',
+  50
+);
+combine(
+  showResult.bind(this, 'The result after subtract all numbers'),
+  'SUBTRACT',
+  0,
+  1,
+  5,
+  10,
+  20,
+  50
+);
 // subtractUP(showResult, 0, 1, 5, 10, 20, 50);
