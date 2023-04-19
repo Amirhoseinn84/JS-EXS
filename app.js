@@ -45,3 +45,4 @@ console.log(firstParagraph.innerHTML);
 
 firstParagraph.innerHTML = 'This is a <strong>Important!<strong/>';
 firstParagraph.innerHTML = firstParagraph.innerHTML + '<p>Hello there!</p>';
+firstParagraph.insertAdjacentHTML('beforeend', '<p>Hiiiii!<p/>');
