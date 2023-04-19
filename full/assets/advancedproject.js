@@ -101,3 +101,13 @@ let h = 4;
 const func2 = (c) => c + h;
 
 console.log(func2(5));
+
+const sumUP = (number) => {
+  let sum = 0;
+  for (const num of number) {
+    sum += num;
+  }
+  return sum;
+};
+
+console.log(sumUP([0, 1, 5, 10, 20]));
