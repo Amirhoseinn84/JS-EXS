@@ -136,7 +136,7 @@ const showResult = (messeageText, result) => {
 
 // console.log(sumUP([0, 1, 5, 10, 20]));
 combine(
-  showResult.bind(this, 'The result after adding all numbers'),
+  showResult.bind(this, 'The result after adding all numbers: '),
   'ADD',
   0,
   1,
@@ -146,7 +146,7 @@ combine(
   50
 );
 combine(
-  showResult.bind(this, 'The result after adding all numbers'),
+  showResult.bind(this, 'The result after adding all numbers: '),
   'ADD',
   0,
   1,
@@ -156,7 +156,7 @@ combine(
   50
 );
 combine(
-  showResult.bind(this, 'The result after subtract all numbers'),
+  showResult.bind(this, 'The result after subtract all numbers: '),
   'SUBTRACT',
   0,
   1,
