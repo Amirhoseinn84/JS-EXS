@@ -78,7 +78,16 @@ startGameBtn.addEventListener('click', () => {
   const playerChoice = getPlayerChoice();
   const ComputerChoice = getComputerChoice();
   const winner = getWinner(playerChoice, ComputerChoice);
-  console.log(winner);
+  let messeage = `You picked ${playerChoice}, computer picked ${ComputerChoice}, therefor you `;
+  if (winner === RESULT_DRAW) {
+    messeage = messeage + 'had a draw.';
+  } else if (winner === RESULT_PLAYER_WINS) {
+    messeage = messeage + 'won.';
+  } else if (winner === RESULT_COMPUTER_WINS) {
+    messeage = messeage + 'lost.';
+  }
+  alert(messeage);
+  gameIsRunning = false;
 });
 
 // startGameBtn.addEventListener('click', playerCHoice);
