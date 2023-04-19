@@ -16,6 +16,8 @@ const startGameBtn = document.getElementById('start-game-btn');
 
 // startGameBtn.addEventListener('click', start);
 
+////////////////////////
+
 const ROCK = 'ROCK';
 const PAPER = 'PAPER';
 const SCISSORS = 'SCISSORS';
@@ -90,17 +92,19 @@ startGameBtn.addEventListener('click', () => {
   gameIsRunning = false;
 });
 
-// startGameBtn.addEventListener('click', playerCHoice);
+////////////////////////
 
 const func = (a, b = 7) => a + b;
 
 console.log(func(3));
 
-let h = 4;
+let h = 6;
 
 const func2 = (c) => c + h;
 
 console.log(func2(5));
+
+////////////////////////
 
 const sumUP = (resultHandler, ...number) => {
   const validateNumber = (number) => {
