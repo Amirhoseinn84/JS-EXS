@@ -38,7 +38,9 @@ console.dir(firstParagraph);
 firstParagraph.insertAdjacentElement('afterend', newAnchorElement);
 const newInput = newAnchorElement.cloneNode(true);
 firstParagraph.append(newAnchorElement, newInput);
-firstParagraph.insertAdjacentElement('afterend', newInput);
+// firstParagraph.insertAdjacentElement('afterend', newInput);
+// firstParagraph.after(newInput);
+firstParagraph.before(newInput);
 
 // let removeHeader = document.querySelector('h1');
 
