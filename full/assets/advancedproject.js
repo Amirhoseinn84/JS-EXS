@@ -114,12 +114,12 @@ const sumUP = (resultHandler, ...number) => {
   resultHandler(sum);
 };
 
-const subtractUP = function () {
+const subtractUP = function (resultHandler, ...numbers) {
   let sum = 0;
-  for (const num of arguments) {
+  for (const num of numbers) {
     sum -= num;
   }
-  return sum;
+  resultHandler(sum);
 };
 
 const showResult = (result) => {
