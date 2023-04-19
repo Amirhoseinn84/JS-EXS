@@ -41,6 +41,7 @@ firstParagraph.append(newAnchorElement, newInput);
 // firstParagraph.insertAdjacentElement('afterend', newInput);
 // firstParagraph.after(newInput);
 firstParagraph.before(newInput);
+// firstParagraph.replaceWith(newInput);
 
 // let removeHeader = document.querySelector('h1');
 
