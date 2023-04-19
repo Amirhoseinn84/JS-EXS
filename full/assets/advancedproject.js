@@ -4,7 +4,7 @@ const start = function startgame() {
   console.log('Game is starting...');
 };
 
-start();
+// start();
 
 const person = {
   greet: function greet() {
@@ -14,4 +14,7 @@ const person = {
 
 person.greet();
 
-startGameBtn.addEventListener('click', start);
+// startGameBtn.addEventListener('click', start);
+startGameBtn.addEventListener('click', function () {
+  console.log('Game is starting...');
+});
