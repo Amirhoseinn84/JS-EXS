@@ -32,9 +32,10 @@ let firstParagraph = document.querySelector('p');
 
 console.dir(firstParagraph);
 
-firstParagraph.append(newAnchorElement);
+// firstParagraph.append(newAnchorElement);
 // firstParagraph.appendChild(newAnchorElement);
 // firstParagraph.prepend(newAnchorElement);
+firstParagraph.insertAdjacentElement('afterend', newAnchorElement);
 
 // let removeHeader = document.querySelector('h1');
 
@@ -45,6 +46,6 @@ firstParagraph.append(newAnchorElement);
 
 console.log(firstParagraph.innerHTML);
 
-firstParagraph.innerHTML = 'This is a <strong>Important!<strong/>';
-firstParagraph.innerHTML = firstParagraph.innerHTML + '<p>Hello there!</p>';
-firstParagraph.insertAdjacentHTML('beforeend', '<p>Hiiiii!<p/>');
+// firstParagraph.innerHTML = 'This is a <strong>Important!<strong/>';
+// firstParagraph.innerHTML = firstParagraph.innerHTML + '<p>Hello there!</p>';
+// firstParagraph.insertAdjacentHTML('beforeend', '<p>Hiiiii!<p/>');
