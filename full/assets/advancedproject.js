@@ -102,12 +102,16 @@ const func2 = (c) => c + h;
 
 console.log(func2(5));
 
-const sumUP = (a, b, ...number) => {
+const sumUP = (resultHandler, ...number) => {
+  const validateNumber = (number) => {
+    return isNaN(number) ? 0 : number;
+  };
+
   let sum = 0;
   for (const num of number) {
     sum += num;
   }
-  return sum;
+  resultHandler(sum);
 };
 
 const subtractUP = function () {
@@ -118,6 +122,10 @@ const subtractUP = function () {
   return sum;
 };
 
+const showResult = (result) => {
+  alert('The result after adding all numbers is: ' + result);
+};
+
 // console.log(sumUP([0, 1, 5, 10, 20]));
-console.log(sumUP(0, 1, 6, 10, 20, 50));
-console.log(subtractUP(0, 1, 5, 10, 20, 50));
+sumUP(showResult, 0, 1, 6, 10, 20, 50);
+subtractUP(showResult, 0, 1, 5, 10, 20, 50);
