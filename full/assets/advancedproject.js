@@ -1,6 +1,6 @@
 const startGameBtn = document.getElementById('start-game-btn');
 
-const start = function () {
+const start = function startgame() {
   console.log('Game is starting...');
 };
 
