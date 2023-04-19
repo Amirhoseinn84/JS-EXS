@@ -14,7 +14,9 @@ anchorElement.href = 'https://www.google.com';
 
 let headElement = document.querySelector('h1');
 
-headElement.textContent = 'AmirHosein';
+headElement.textContent = 'Amirhosein';
+
+headElement.textContent = headElement.textContent + ' ' + 'Halimi';
 
 let element = document.body.firstElementChild;
 
