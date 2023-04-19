@@ -48,8 +48,8 @@ const getComputerChoice = function () {
   }
 };
 
-const getWinner = (cChoice, pChoice) => {
-  return cChoice === pChoice
+const getWinner = (cChoice, pChoice) =>
+  cChoice === pChoice
     ? RESULT_DRAW
     : (cChoice === ROCK && pChoice === PAPER) ||
       (cChoice === PAPER && pChoice === SCISSORS) ||
@@ -57,18 +57,17 @@ const getWinner = (cChoice, pChoice) => {
     ? RESULT_PLAYER_WINS
     : RESULT_COMPUTER_WINS;
 
-  // if (cChoice === pChoice) {
-  //   return RESULT_DRAW;
-  // } else if (
-  //   (cChoice === ROCK && pChoice === PAPER) ||
-  //   (cChoice === PAPER && pChoice === SCISSORS) ||
-  //   (cChoice === SCISSORS && pChoice === ROCK)
-  // ) {
-  //   return RESULT_PLAYER_WINS;
-  // } else {
-  //   return RESULT_COMPUTER_WINS;
-  // }
-};
+// if (cChoice === pChoice) {
+//   return RESULT_DRAW;
+// } else if (
+//   (cChoice === ROCK && pChoice === PAPER) ||
+//   (cChoice === PAPER && pChoice === SCISSORS) ||
+//   (cChoice === SCISSORS && pChoice === ROCK)
+// ) {
+//   return RESULT_PLAYER_WINS;
+// } else {
+//   return RESULT_COMPUTER_WINS;
+// }
 
 startGameBtn.addEventListener('click', function () {
   if (gameIsRunning) {
@@ -83,3 +82,7 @@ startGameBtn.addEventListener('click', function () {
 });
 
 // startGameBtn.addEventListener('click', playerCHoice);
+
+const func = (a, b) => a + b;
+
+console.log(func(3, 4));
