@@ -14,7 +14,7 @@ const person = {
 
 person.greet();
 
-// startGameBtn.addEventListener('click', start);
-startGameBtn.addEventListener('click', function () {
-  console.log('Game is starting...');
-});
+startGameBtn.addEventListener('click', start);
+// startGameBtn.addEventListener('click', function () {
+//   console.log('Game is starting...');
+// });
