@@ -44,3 +44,4 @@ firstParagraph.append(newAnchorElement);
 console.log(firstParagraph.innerHTML);
 
 firstParagraph.innerHTML = 'This is a <strong>Important!<strong/>';
+firstParagraph.innerHTML = firstParagraph.innerHTML + '<p>Hello there!</p>';
