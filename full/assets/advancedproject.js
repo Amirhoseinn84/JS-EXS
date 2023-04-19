@@ -4,6 +4,8 @@ const start = function startgame() {
   console.log('Game is starting...');
 };
 
+start();
+
 const person = {
   greet: function greet() {
     console.log('Hello there!');
