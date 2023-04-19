@@ -106,30 +106,35 @@ console.log(func2(5));
 
 ////////////////////////
 
-const sumUP = (resultHandler, ...number) => {
+const combine = (resultHandler, operation, ...number) => {
   const validateNumber = (number) => {
     return isNaN(number) ? 0 : number;
   };
 
   let sum = 0;
   for (const num of number) {
-    sum += num;
+    if (operation === 'ADD') {
+      sum += validateNumber(num);
+    } else {
+      sum -= validateNumber(num);
+    }
   }
   resultHandler(sum);
 };
 
-const subtractUP = function (resultHandler, ...numbers) {
-  let sum = 0;
-  for (const num of numbers) {
-    sum -= num;
-  }
-  resultHandler(sum);
-};
+// const subtractUP = function (resultHandler, ...numbers) {
+//   let sum = 0;
+//   for (const num of numbers) {
+//     sum -= num;
+//   }
+//   resultHandler(sum);
+// };
 
 const showResult = (result) => {
   alert('The result after adding all numbers is: ' + result);
 };
 
 // console.log(sumUP([0, 1, 5, 10, 20]));
-sumUP(showResult, 0, 1, 6, 10, 20, 50);
-subtractUP(showResult, 0, 1, 5, 10, 20, 50);
+combine(showResult, 'ADD', 0, 1, 6, 10, 20, 50);
+combine(showResult, 'SUBTRACT', 0, 1, 5, 10, 20, 50);
+// subtractUP(showResult, 0, 1, 5, 10, 20, 50);
