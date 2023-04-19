@@ -33,6 +33,8 @@ let firstParagraph = document.querySelector('p');
 console.dir(firstParagraph);
 
 firstParagraph.append(newAnchorElement);
+firstParagraph.appendChild(newAnchorElement);
+firstParagraph.prepend(newAnchorElement);
 
 // let removeHeader = document.querySelector('h1');
 
