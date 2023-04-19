@@ -102,7 +102,7 @@ const func2 = (c) => c + h;
 
 console.log(func2(5));
 
-const sumUP = (number) => {
+const sumUP = (a, b, ...number) => {
   let sum = 0;
   for (const num of number) {
     sum += num;
@@ -110,4 +110,14 @@ const sumUP = (number) => {
   return sum;
 };
 
-console.log(sumUP([0, 1, 5, 10, 20]));
+const subtractUP = function () {
+  let sum = 0;
+  for (const num of arguments) {
+    sum -= num;
+  }
+  return sum;
+};
+
+// console.log(sumUP([0, 1, 5, 10, 20]));
+console.log(sumUP(0, 1, 6, 10, 20, 50));
+console.log(subtractUP(0, 1, 5, 10, 20, 50));
