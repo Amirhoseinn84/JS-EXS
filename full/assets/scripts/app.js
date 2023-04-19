@@ -122,47 +122,51 @@ function calculateResult(calculationType) {
   getToWrite(calculationType, initialResult, enteredNumber, currentResult);
 }
 
-function add() {
-  calculateResult(CALC_ADD);
-  // const enteredNumber = getUserData();
-  // const initialResult = currentResult;
-  // currentResult += enteredNumber;
-  // createAndWriteOutput('+', initialResult, enteredNumber);
-  // getToWrite('ADD', initialResult, enteredNumber, currentResult);
-}
+// function add() {
+//   calculateResult(CALC_ADD);
+//   // const enteredNumber = getUserData();
+//   // const initialResult = currentResult;
+//   // currentResult += enteredNumber;
+//   // createAndWriteOutput('+', initialResult, enteredNumber);
+//   // getToWrite('ADD', initialResult, enteredNumber, currentResult);
+// }
 
-function sub() {
-  calculateResult(CALC_SUB);
-  // const enteredNumber = getUserData();
-  // const initialResult = currentResult;
-  // currentResult -= enteredNumber;
-  // createAndWriteOutput('-', initialResult, enteredNumber);
-  // getToWrite('SUBTRACT', initialResult, enteredNumber, currentResult);
-}
+// function sub() {
+//   calculateResult(CALC_SUB);
+//   // const enteredNumber = getUserData();
+//   // const initialResult = currentResult;
+//   // currentResult -= enteredNumber;
+//   // createAndWriteOutput('-', initialResult, enteredNumber);
+//   // getToWrite('SUBTRACT', initialResult, enteredNumber, currentResult);
+// }
 
-function mul() {
-  calculateResult('MULTI');
-  // const enteredNumber = getUserData();
-  // const initialResult = currentResult;
-  // currentResult *= enteredNumber;
-  // createAndWriteOutput('*', initialResult, enteredNumber);
-  // getToWrite('MULTI', initialResult, enteredNumber, currentResult);
-}
+// function mul() {
+//   calculateResult('MULTI');
+//   // const enteredNumber = getUserData();
+//   // const initialResult = currentResult;
+//   // currentResult *= enteredNumber;
+//   // createAndWriteOutput('*', initialResult, enteredNumber);
+//   // getToWrite('MULTI', initialResult, enteredNumber, currentResult);
+// }
 
-function div() {
-  calculateResult('DIVIDE');
-  // const enteredNumber = getUserData();
-  // const initialResult = currentResult;
-  // currentResult /= enteredNumber;
-  // createAndWriteOutput('/', initialResult, enteredNumber);
-  // getToWrite('DIVIDE', initialResult, enteredNumber, currentResult);
-}
+// function div() {
+//   calculateResult('DIVIDE');
+//   // const enteredNumber = getUserData();
+//   // const initialResult = currentResult;
+//   // currentResult /= enteredNumber;
+//   // createAndWriteOutput('/', initialResult, enteredNumber);
+//   // getToWrite('DIVIDE', initialResult, enteredNumber, currentResult);
+// }
 
-addBtn.addEventListener('click', add);
-subtractBtn.addEventListener('click', sub);
-multiplyBtn.addEventListener('click', mul);
-divideBtn.addEventListener('click', div);
+// addBtn.addEventListener('click', add);
+// subtractBtn.addEventListener('click', sub);
+// multiplyBtn.addEventListener('click', mul);
+// divideBtn.addEventListener('click', div);
 
+addBtn.addEventListener('click', calculateResult.bind(this, 'ADD'));
+subtractBtn.addEventListener('click', calculateResult.bind(this, 'SUBTRACT'));
+multiplyBtn.addEventListener('click', calculateResult.bind(this, 'MULTI'));
+divideBtn.addEventListener('click', calculateResult.bind(this, 'DIVIDE'));
 //////////////////////////////
 
 // let arraies = [];
