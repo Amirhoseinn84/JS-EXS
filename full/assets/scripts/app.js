@@ -163,8 +163,8 @@ function calculateResult(calculationType) {
 // multiplyBtn.addEventListener('click', mul);
 // divideBtn.addEventListener('click', div);
 
-addBtn.addEventListener('click', calculateResult.bind(this, 'ADD'));
-subtractBtn.addEventListener('click', calculateResult.bind(this, 'SUBTRACT'));
+addBtn.addEventListener('click', calculateResult.bind(this, CALC_ADD));
+subtractBtn.addEventListener('click', calculateResult.bind(this, CALC_SUB));
 multiplyBtn.addEventListener('click', calculateResult.bind(this, 'MULTI'));
 divideBtn.addEventListener('click', calculateResult.bind(this, 'DIVIDE'));
 //////////////////////////////
