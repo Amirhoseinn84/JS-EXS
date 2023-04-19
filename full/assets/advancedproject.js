@@ -115,6 +115,7 @@ const combine = (resultHandler, operation, ...number) => {
   for (const num of number) {
     if (operation === 'ADD') {
       sum += validateNumber(num);
+      // throw { messeage: 'Invalid input' };
     } else {
       sum -= validateNumber(num);
     }
