@@ -42,11 +42,13 @@ for (const data of analyticsData) {
 }
 
 const morearr = ['coding', 'reading'];
-morearr.push('cooking');
-morearr.unshift('trading');
-morearr.pop();
-morearr.shift();
+// morearr.push('cooking');
+// morearr.unshift('trading');
+// morearr.pop();
+// morearr.shift();
+// morearr[2] = 'trading';
 
-morearr[2] = 'trading';
+morearr.splice(1, 0, 'food');
+morearr.splice(-2, 1);
 
 console.log(morearr);
