@@ -187,9 +187,9 @@ person1[0].age = 18;
 
 console.log(person1, copiedperson1);
 
-const nameData = ['Amirhosein', 'Halimi'];
+const nameData = ['Amirhosein', 'Halimi', 18, 'Mr'];
 // const firstName = nameData[0];
 // const lastName = nameData[1];
 
-const [firstName, lastName] = nameData;
-console.log(firstName, lastName);
+const [firstName, lastName, ...otherInformation] = nameData;
+console.log(firstName, lastName, otherInformation);
