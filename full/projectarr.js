@@ -232,3 +232,20 @@ for (const value of personData.values()) {
 }
 
 console.log(personData.size);
+
+let people = { name: 'Amirhosein' };
+
+const people1 = new WeakSet();
+people1.add(people);
+
+// people = null;
+
+console.log(people1);
+
+const peopleData = new WeakMap();
+
+peopleData.set(people, 'Extract info!');
+
+people = null;
+
+console.log(peopleData);
