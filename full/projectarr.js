@@ -159,3 +159,8 @@ const data = 'NEWYORK;11.99;2000';
 const tranformedData = data.split(';');
 tranformedData[1] = +tranformedData[1];
 console.log(tranformedData);
+
+const newFragement = ['Amir', 'hosein'];
+const namee = newFragement.join(' ');
+
+console.log(namee);
