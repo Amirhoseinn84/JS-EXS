@@ -131,8 +131,8 @@ const sortedPrice = prices.sort((a, b) => {
 // console.log(sortedPrice);
 console.log(sortedPrice.reverse());
 
-const filteredArray = prices.filter((price) => price > 3);
-console.log(filteredArray);
+// const filteredArray = prices.filter((price) => price > 3);
+// console.log(filteredArray);
 
 const filteredArrayy = prices.filter((p) => p > 2);
 console.log(filteredArrayy);
