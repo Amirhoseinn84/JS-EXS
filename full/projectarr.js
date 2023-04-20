@@ -82,7 +82,7 @@ const amirhoseinIndex = personalData2.findIndex((person, idx, persons) => {
 
 console.log(amirhoseinIndex);
 
-const prices = [1.99, 3.99, 5.99, 7.99];
+const prices = [8.99, 4.99, 2.99, 1.99];
 const tax = 0.19;
 const taxAdjustedPrices = [];
 const anotherTaxAdjustedPrices = [];
@@ -111,3 +111,9 @@ const adjustedNumber = prices.map((price) => {
 });
 
 console.log(adjustedNumber);
+
+const adjustedNumber2 = prices.map((price) => price * 2);
+console.log(adjustedNumber2);
+
+const sortedPrice = prices.sort();
+console.log(sortedPrice);
