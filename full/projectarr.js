@@ -22,3 +22,21 @@ console.log(moreMoreNumbers);
 
 const listItem = Array.from(listItems);
 console.log(listItem);
+
+const hobbies = ['sports', 'reading'];
+console.log(hobbies);
+
+const personalData = [18, 'Amir', { moreDetails: [] }];
+console.log(personalData);
+
+const analyticsData = [
+  [1, 3],
+  [7, 9],
+];
+
+for (const data of analyticsData) {
+  for (const dataPoint of data) {
+    console.log(dataPoint);
+  }
+  // console.log(analyticsData);
+}
