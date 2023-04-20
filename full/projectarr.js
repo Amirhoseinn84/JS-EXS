@@ -115,5 +115,17 @@ console.log(adjustedNumber);
 const adjustedNumber2 = prices.map((price) => price * 2);
 console.log(adjustedNumber2);
 
-const sortedPrice = prices.sort();
+// const sortedPrice = prices.sort();
+// console.log(sortedPrice);
+
+const sortedPrice = prices.sort((a, b) => {
+  if (a > b) {
+    return 1;
+  } else if (a === b) {
+    return 0;
+  } else {
+    return -1;
+  }
+});
+
 console.log(sortedPrice);
