@@ -62,10 +62,13 @@ testResult.push(7.9);
 console.log(storedResult, testResult);
 console.log(testResult.indexOf(8.9));
 
+console.log(testResult.includes(2.3));
+console.log(testResult.indexOf(2.3) !== -1);
+
 const personalData2 = [{ name: 'Amir' }, { name: 'Amirhosein' }];
 // console.log(personalData2.indexOf({ name: 'Amirhosein' }));
 
-const amir = personalData2.find((person) => {
+const amir = personalData2.find((person, idx, persons) => {
   return person.name === 'Amir';
 });
 
@@ -73,7 +76,7 @@ amir.name = 'Arshiya';
 
 console.log(amir, personalData2);
 
-const amirhoseinIndex = personalData2.findIndex((person) => {
+const amirhoseinIndex = personalData2.findIndex((person, idx, persons) => {
   return person.name === 'Amirhosein';
 });
 
