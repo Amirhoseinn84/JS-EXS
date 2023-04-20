@@ -193,3 +193,9 @@ const nameData = ['Amirhosein', 'Halimi', 18, 'Mr'];
 
 const [firstName, lastName, ...otherInformation] = nameData;
 console.log(firstName, lastName, otherInformation);
+
+//////////////////////////
+
+const ids = new Set([1, 2, 3]);
+
+console.log(ids);
