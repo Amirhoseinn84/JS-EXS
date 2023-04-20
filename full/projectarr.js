@@ -52,3 +52,10 @@ morearr.splice(1, 0, 'food');
 morearr.splice(-2, 1);
 
 console.log(morearr);
+
+const testResult = [2, 1.5, 2.3, -8, 8.9];
+const storedResult = testResult.slice();
+
+testResult.push(7.9);
+
+console.log(storedResult, testResult);
