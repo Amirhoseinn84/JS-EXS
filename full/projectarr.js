@@ -95,5 +95,4 @@ prices.forEach((price, idx, prices) => {
   taxAdjustedPrices.push(priceObj);
 });
 
-// console.log(taxAdjustedPrices);
 console.log(taxAdjustedPrices);
