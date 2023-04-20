@@ -44,5 +44,9 @@ for (const data of analyticsData) {
 const morearr = ['coding', 'reading'];
 morearr.push('cooking');
 morearr.unshift('trading');
+morearr.pop();
+morearr.shift();
+
+morearr[2] = 'trading';
 
 console.log(morearr);
