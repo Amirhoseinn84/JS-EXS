@@ -85,6 +85,7 @@ console.log(amirhoseinIndex);
 const prices = [1.99, 3.99, 5.99, 7.99];
 const tax = 0.19;
 const taxAdjustedPrices = [];
+const anotherTaxAdjustedPrices = [];
 
 // for (const price of prices) {
 // taxAdjustedPrices.push(price * (1 + tax));
@@ -96,3 +97,10 @@ prices.forEach((price, idx, prices) => {
 });
 
 console.log(taxAdjustedPrices);
+
+prices.forEach((price) => {
+  const anotherObj = { new: price * 2 };
+  anotherTaxAdjustedPrices.push(anotherObj);
+});
+
+console.log(anotherTaxAdjustedPrices);
