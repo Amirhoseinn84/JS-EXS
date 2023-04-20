@@ -172,3 +172,17 @@ newFragement.push('Mr');
 console.log(newFragement, copiedNameFragement);
 
 console.log(Math.min(...prices));
+
+const person1 = [
+  { name: 'Amirhosein', age: 17 },
+  { name: 'Amir', age: 17 },
+];
+
+const copiedperson1 = person1.map((person) => ({
+  name: person.name,
+  age: person.age,
+}));
+
+person1[0].age = 18;
+
+console.log(person1, copiedperson1);
