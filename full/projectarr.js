@@ -53,9 +53,22 @@ morearr.splice(-2, 1);
 
 console.log(morearr);
 
-const testResult = [2, 1.5, 2.3, -8, 8.9];
-const storedResult = testResult.slice(0, 3);
+const testResult = [2, 1.5, 2.3, -8, 2.3, 8.9];
+// const storedResult = testResult.slice(0, 3);
+const storedResult = testResult.concat([1.2, 10]);
 
 testResult.push(7.9);
 
 console.log(storedResult, testResult);
+console.log(testResult.indexOf(8.9));
+
+const personalData2 = [{ name: 'Amir' }, { name: 'Amirhosein' }];
+console.log(personalData2.indexOf({ name: 'Amirhosein' }));
+
+const amir = personalData2.find((person, idx, persons) => {
+  return person.name === 'Amir';
+});
+
+amir.name = 'Arshiya';
+
+console.log(amir, personalData2);
