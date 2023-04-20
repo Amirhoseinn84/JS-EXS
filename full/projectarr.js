@@ -208,3 +208,9 @@ for (const entry of ids.entries()) {
 }
 
 // console.log(ids.has(1));
+
+const person11 = { name: 'Amirhosein' };
+const person22 = { name: 'Amir' };
+
+const personData = new Map([[person1, [{ date: 'yesterday', price: 10 }]]]);
+console.log(personData);
