@@ -136,3 +136,17 @@ console.log(filteredArray);
 
 const filteredArrayy = prices.filter((p) => p > 2);
 console.log(filteredArrayy);
+
+// let sum = 0;
+
+// prices.forEach((price) => {
+//   sum += price;
+// });
+
+// console.log(sum);
+
+const sum = prices.reduce((prevValue, curValue, curIndex, prices) => {
+  return prevValue + curValue;
+}, 0);
+
+console.log(sum);
