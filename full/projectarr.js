@@ -164,3 +164,11 @@ const newFragement = ['Amir', 'hosein'];
 const namee = newFragement.join(' ');
 
 console.log(namee);
+
+const copiedNameFragement = [...newFragement];
+
+newFragement.push('Mr');
+
+console.log(newFragement, copiedNameFragement);
+
+console.log(Math.min(...prices));
