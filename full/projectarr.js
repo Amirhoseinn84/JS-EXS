@@ -103,6 +103,8 @@ prices.forEach((price) => {
   anotherTaxAdjustedPrices.push(anotherObj);
 });
 
+console.log(anotherTaxAdjustedPrices);
+
 const adjustedNumber = prices.map((price) => {
   const anotherObj = price * 2;
   return anotherObj;
