@@ -40,3 +40,9 @@ for (const data of analyticsData) {
   }
   // console.log(analyticsData);
 }
+
+const morearr = ['coding', 'reading'];
+morearr.push('cooking');
+morearr.unshift('trading');
+
+console.log(morearr);
