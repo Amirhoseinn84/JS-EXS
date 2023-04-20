@@ -186,3 +186,10 @@ const copiedperson1 = person1.map((person) => ({
 person1[0].age = 18;
 
 console.log(person1, copiedperson1);
+
+const nameData = ['Amirhosein', 'Halimi'];
+// const firstName = nameData[0];
+// const lastName = nameData[1];
+
+const [firstName, lastName] = nameData;
+console.log(firstName, lastName);
