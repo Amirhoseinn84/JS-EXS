@@ -212,5 +212,13 @@ for (const entry of ids.entries()) {
 const person11 = { name: 'Amirhosein' };
 const person22 = { name: 'Amir' };
 
-const personData = new Map([[person1, [{ date: 'yesterday', price: 10 }]]]);
+const personData = new Map([[person11, [{ date: 'yesterday', price: 10 }]]]);
+
+personData.set(person22, [{ date: 'two weeks ago', price: 20 }]);
+
 console.log(personData);
+console.log(personData.get(person1));
+
+for (const entry of personData.entries()) {
+  console.log(entry);
+}
