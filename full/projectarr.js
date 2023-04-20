@@ -219,6 +219,16 @@ personData.set(person22, [{ date: 'two weeks ago', price: 20 }]);
 console.log(personData);
 console.log(personData.get(person1));
 
-for (const entry of personData.entries()) {
-  console.log(entry);
+for (const [key, value] of personData.entries()) {
+  console.log(key, value);
 }
+
+for (const key of personData.keys()) {
+  console.log(key);
+}
+
+for (const value of personData.values()) {
+  console.log(value);
+}
+
+console.log(personData.size);
