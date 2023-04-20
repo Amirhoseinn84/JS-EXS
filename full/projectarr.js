@@ -12,3 +12,13 @@ console.log(moreNumbersInput2);
 
 const yetMoreNumbers = Array.of(3, 4);
 console.log(yetMoreNumbers);
+
+const listItems = document.querySelectorAll('li');
+console.log(listItems);
+
+// const moreMoreNumbers = Array.from([1, 2, 3, 4, 5]);
+const moreMoreNumbers = Array.from('Amir');
+console.log(moreMoreNumbers);
+
+const listItem = Array.from(listItems);
+console.log(listItem);
