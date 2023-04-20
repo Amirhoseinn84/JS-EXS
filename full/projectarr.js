@@ -65,10 +65,16 @@ console.log(testResult.indexOf(8.9));
 const personalData2 = [{ name: 'Amir' }, { name: 'Amirhosein' }];
 // console.log(personalData2.indexOf({ name: 'Amirhosein' }));
 
-const amir = personalData2.find((person, idx, persons) => {
+const amir = personalData2.find((person) => {
   return person.name === 'Amir';
 });
 
 amir.name = 'Arshiya';
 
 console.log(amir, personalData2);
+
+const amirhoseinIndex = personalData2.findIndex((person) => {
+  return person.name === 'Amirhosein';
+});
+
+console.log(amirhoseinIndex);
