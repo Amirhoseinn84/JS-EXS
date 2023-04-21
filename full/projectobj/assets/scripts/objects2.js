@@ -57,3 +57,13 @@ const person3 = { ...person1, age: 17, hobbies: [...person1.hobbies] };
 person3.hobbies.pop();
 
 console.log(person3);
+
+const people1 = { name: 'Amirhosein' };
+
+const people2 = Object.assign({}, people1);
+
+console.log(people2);
+
+people1.name = 'Amir';
+
+console.log(people1);
