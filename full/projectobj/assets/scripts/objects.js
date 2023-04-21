@@ -1,3 +1,8 @@
+const movieList = document.getElementById('movie-list');
+
+movieList.style['backgroundColor'] = 'red';
+movieList.style.display = 'block';
+
 const person = {
   'first name': 'Amirhosein',
   age: 18,
