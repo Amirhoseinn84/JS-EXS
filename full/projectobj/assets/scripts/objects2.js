@@ -66,4 +66,8 @@ console.log(people2);
 
 people1.name = 'Amir';
 
-console.log(people1);
+console.log(person1);
+
+const { hobbies } = person1;
+
+console.log(hobbies);
