@@ -31,3 +31,13 @@ console.log(person[userChosenKeyname]);
 console.log(person[1.5]);
 
 // person.greet();
+
+const person1 = { name: 'Amirhosein', hobbies: ['reading', 'cooking'] };
+
+console.log(person1);
+
+const person2 = person1;
+
+person1.age = 18;
+
+console.log(person2);
