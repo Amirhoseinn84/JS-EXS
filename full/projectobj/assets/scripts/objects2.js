@@ -32,7 +32,13 @@ console.log(person[1.5]);
 
 // person.greet();
 
-const person1 = { name: 'Amirhosein', hobbies: ['reading', 'cooking'] };
+const person1 = {
+  name: 'Amirhosein',
+  hobbies: ['reading', 'cooking'],
+  info: {
+    title: 84,
+  },
+};
 
 console.log(person1);
 
@@ -68,6 +74,10 @@ people1.name = 'Amir';
 
 console.log(person1);
 
-const { hobbies } = person1;
+const { hobbies, ...otherProps } = person1;
 
-console.log(hobbies);
+const { info: infoTitled } = person1;
+
+console.log(hobbies, otherProps);
+
+console.log(infoTitled);
