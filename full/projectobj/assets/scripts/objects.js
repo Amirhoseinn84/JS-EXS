@@ -4,9 +4,12 @@ const movieList = document.getElementById('movie-list');
 // movieList.style['background-color'] = 'red';
 // movieList.style.display = 'block';
 
+const userChosenKeyname = 'level';
+
 const person = {
   'first name': 'Amirhosein',
   age: 18,
+  [userChosenKeyname]: '...',
   hobbies: ['coding', 'reading', 'trading'],
   greet: function () {
     console.log('Hi there!');
@@ -19,8 +22,12 @@ person.isAdmin = 'true';
 // person.age = undefined;
 person.age = null;
 
+const keyName = 'first-name';
+
 console.log(person);
-console.log(person['first name']);
+// console.log(person['first name']);
+console.log(person[keyName]);
+console.log(person[userChosenKeyname]);
 console.log(person[1.5]);
 
 // person.greet();
