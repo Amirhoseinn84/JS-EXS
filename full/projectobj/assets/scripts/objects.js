@@ -1,33 +1,49 @@
-const movieList = document.getElementById('movie-list');
+const addMovieBtn = document.getElementById('add-movie-btn');
+const searchBtn = document.getElementById('search-btn');
 
-// movieList.style['backgroundColor'] = 'red';
-// movieList.style['background-color'] = 'red';
-// movieList.style.display = 'block';
+const movies = [];
 
-const userChosenKeyname = 'level';
+const renderMovies = () => {
+  const movieList = document.getElementById('movie-list');
 
-const person = {
-  'first name': 'Amirhosein',
-  age: 18,
-  [userChosenKeyname]: '...',
-  hobbies: ['coding', 'reading', 'trading'],
-  greet: function () {
-    console.log('Hi there!');
-  },
-  1.5: 'Hello!',
+  if (movies.length === 0) {
+    movieList.classList.remove('visible');
+    return;
+  } else {
+    movieList.classList.add('visible');
+  }
+  movieList.innerHTML = '';
+
+  movies.forEach((movie) => {
+    const movieEl = document.createElement('li');
+    movieEl.textContent = movie.info.title;
+    movieList.append(movieEl);
+  });
 };
 
-person.isAdmin = 'true';
-// delete person.age;
-// person.age = undefined;
-person.age = null;
+const addMovieHandler = () => {
+  const title = document.getElementById('title').value;
+  const extraName = document.getElementById('extra-name').value;
+  const extraValue = document.getElementById('extra-value').value;
 
-const keyName = 'first-name';
+  if (
+    title.trim() === '' ||
+    extraName.trim() === '' ||
+    extraValue.trim() === ''
+  ) {
+    return;
+  }
 
-console.log(person);
-// console.log(person['first name']);
-console.log(person[keyName]);
-console.log(person[userChosenKeyname]);
-console.log(person[1.5]);
+  const newMovie = {
+    info: {
+      title,
+      [extraName]: extraValue
+    },
+    id: Math.random()
+  };
 
-// person.greet();
+  movies.push(newMovie);
+  renderMovies();
+};
+
+addMovieBtn.addEventListener('click', addMovieHandler);
