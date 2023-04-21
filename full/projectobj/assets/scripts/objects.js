@@ -37,12 +37,13 @@ const addMovieHandler = () => {
   const newMovie = {
     info: {
       title,
-      [extraName]: extraValue
+      [extraName]: extraValue,
     },
-    id: Math.random()
+    id: Math.random(),
   };
 
   movies.push(newMovie);
+  console.log(movies);
   renderMovies();
 };
 
