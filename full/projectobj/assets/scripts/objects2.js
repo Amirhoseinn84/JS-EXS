@@ -81,3 +81,11 @@ const { info: infoTitled } = person1;
 console.log(hobbies, otherProps);
 
 console.log(infoTitled);
+
+if ('info' in person1) {
+  console.log(infoTitled);
+}
+
+if (person1.hobbies !== undefined) {
+  console.log(person1.hobbies);
+}
