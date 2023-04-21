@@ -41,3 +41,9 @@ const person2 = person1;
 person1.age = 18;
 
 console.log(person2);
+
+const anotherPerson = { ...person1 };
+
+anotherPerson.play = 'soccer';
+
+console.log(anotherPerson);
