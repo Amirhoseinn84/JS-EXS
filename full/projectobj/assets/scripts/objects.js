@@ -1,7 +1,8 @@
 const movieList = document.getElementById('movie-list');
 
-movieList.style['backgroundColor'] = 'red';
-movieList.style.display = 'block';
+// movieList.style['backgroundColor'] = 'red';
+// movieList.style['background-color'] = 'red';
+// movieList.style.display = 'block';
 
 const person = {
   'first name': 'Amirhosein',
