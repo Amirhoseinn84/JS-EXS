@@ -1,5 +1,5 @@
 const person = {
-  name: 'Amirhosein',
+  'first name': 'Amirhosein',
   age: 18,
   hobbies: ['coding', 'reading', 'trading'],
   greet: function () {
@@ -13,6 +13,6 @@ person.isAdmin = 'true';
 person.age = null;
 
 console.log(person);
-console.log(person.age);
+console.log(person['first name']);
 
 // person.greet();
