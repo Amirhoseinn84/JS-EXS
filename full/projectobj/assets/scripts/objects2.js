@@ -51,3 +51,9 @@ console.log(anotherPerson);
 person1.hobbies.push('coding');
 
 console.log(person1);
+
+const person3 = { ...person1, age: 17, hobbies: [...person1.hobbies] };
+
+person3.hobbies.pop();
+
+console.log(person3);
