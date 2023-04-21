@@ -47,3 +47,7 @@ const anotherPerson = { ...person1 };
 anotherPerson.play = 'soccer';
 
 console.log(anotherPerson);
+
+person1.hobbies.push('coding');
+
+console.log(person1);
