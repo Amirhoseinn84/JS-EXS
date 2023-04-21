@@ -86,6 +86,8 @@ if ('info' in person1) {
   console.log(infoTitled);
 }
 
-if (person1.hobbies !== undefined) {
+if (person1.hobbies === undefined) {
+  console.log(person1.hobbies);
+} else {
   console.log(person1.hobbies);
 }
