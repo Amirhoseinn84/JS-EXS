@@ -8,8 +8,11 @@ const person = {
 };
 
 person.isAdmin = 'true';
-delete person.age;
+// delete person.age;
+// person.age = undefined;
+person.age = null;
 
 console.log(person);
+console.log(person.age);
 
 // person.greet();
