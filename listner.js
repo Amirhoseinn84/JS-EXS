@@ -18,3 +18,9 @@ function retrieveUserInput(event) {
 }
 
 inputElement.addEventListener('input', retrieveUserInput);
+
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', () => {
+  console.log('HIii');
+});
