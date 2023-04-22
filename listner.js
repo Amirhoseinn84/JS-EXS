@@ -21,7 +21,7 @@ inputElement.addEventListener('input', retrieveUserInput);
 
 ///////////////////
 
-const btn = document.querySelector('button');
+const button = document.querySelector('button');
 
 // btn.onclick = function () {
 //   console.log('Hi! there');
@@ -47,8 +47,13 @@ const buttonClickeHandler = (event) => {
 
 const boundFn = buttonClickeHandler.bind(this);
 
-btn.addEventListener('click', buttonClickeHandler);
+// button.addEventListener('click', buttonClickeHandler);
+button.addEventListener('mouseenter', buttonClickeHandler);
 
 setTimeout(() => {
-  btn.removeEventListener('click', buttonClickeHandler);
+  button.removeEventListener('click', buttonClickeHandler);
 }, 2000);
+
+window.addEventListener('scroll', (event) => {
+  console.log(event);
+});
