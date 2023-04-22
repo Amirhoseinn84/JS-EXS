@@ -37,14 +37,18 @@ const btn = document.querySelector('button');
 //   console.log('HIii');
 // });
 
-const buttonClickeHandler = () => {
-  console.log('This was clicked!');
+// const buttonClickeHandler = () => {
+//   console.log('This was clicked!');
+// };
+
+const buttonClickeHandler = (event) => {
+  console.log(event);
 };
 
 const boundFn = buttonClickeHandler.bind(this);
 
-btn.addEventListener('click', boundFn);
+btn.addEventListener('click', buttonClickeHandler);
 
 setTimeout(() => {
-  btn.removeEventListener('click', boundFn);
+  btn.removeEventListener('click', buttonClickeHandler);
 }, 2000);
