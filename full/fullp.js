@@ -102,11 +102,12 @@ const student = Object.create(
 
 student.name = 'Amir';
 
-// Object.defineProperty(student, 'progress', {
-//   configurable: true,
-//   enumerable: true,
-//   value: 0.8,
-//   writable: false,
-// });
+Object.defineProperty(student, 'progress', {
+  configurable: true,
+  enumerable: true,
+  value: 0.8,
+  writable: false,
+});
 
+student.printProgress();
 console.log(student);
