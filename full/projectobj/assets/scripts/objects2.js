@@ -91,3 +91,16 @@ if (person1.hobbies === undefined) {
 } else {
   console.log(person1.hobbies);
 }
+
+const members = {
+  teamName: 'Blue Rockets',
+  people: ['Amir', 'Amirhosein'],
+  getTeamMember() {
+    this.people.forEach((p) => {
+      console.log(this);
+      console.log(p + ' - ' + this.teamName);
+    });
+  },
+};
+
+console.log(members.getTeamMember());
