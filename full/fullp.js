@@ -147,3 +147,8 @@ console.log(dateEL.getTime());
 
 const dateEL2 = new Date('11 / 09 / 20');
 console.log(dateEL2);
+
+const customError = new Error('Sth Went Wrong!');
+customError.code = 404;
+console.log(customError);
+console.dir(customError);
