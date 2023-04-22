@@ -120,17 +120,17 @@ console.log(student);
 
 /////////////////////////
 
-const someScript = document.createElement('script');
-const timeEl = (someScript.textContent = 'alert("Hi there!")');
-document.head.append(someScript);
+// const someScript = document.createElement('script');
+// const timeEl = (someScript.textContent = 'alert("Hi there!")');
+// document.head.append(someScript);
 
 /////////////////////////
 
-setTimeout(timeEl, 3000);
+// setTimeout(timeEl, 3000);
 
-setInterval(() => {
-  console.log('Sending data...');
-}, 3000);
+// setInterval(() => {
+//   console.log('Sending data...');
+// }, 3000);
 
 // location.href = 'https://google.com';
 // history.back();
@@ -141,3 +141,6 @@ console.log(navigator.userAgent);
 navigator.geolocation.getCurrentPosition((data) => {
   console.log(data);
 });
+
+const dateEL = new Date();
+console.log(dateEL.getTime());
