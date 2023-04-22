@@ -76,9 +76,18 @@ const course = {
 // console.log(Object.getPrototypeOf(course));
 
 Object.setPrototypeOf(course, {
+  ...Object.getPrototypeOf(course),
   printRating: function () {
     console.log(`${this.rating}/5`);
   },
 });
 
 course.printRating();
+
+const student = Object.create({
+  printProgress: function () {
+    console.log(this.progress);
+  },
+});
+
+console.log(student);
