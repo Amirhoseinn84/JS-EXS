@@ -152,7 +152,7 @@ console.log(filteredArrayy);
 // console.log(sum);
 
 const sum = prices.reduce((prevValue, curValue) => prevValue + curValue, 0);
-console.log(sum);
+console.log(sum.toFixed(2));
 
 const data = 'NEWYORK;11.99;2000';
 
