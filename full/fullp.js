@@ -67,3 +67,18 @@ p.greet();
 
 const buttonElment = document.getElementById('btn');
 buttonElment.addEventListener('click', p.greet.bind(p));
+
+const course = {
+  title: 'JavaScript - The Complete Guide',
+  rating: 5,
+};
+
+// console.log(Object.getPrototypeOf(course));
+
+Object.setPrototypeOf(course, {
+  printRating: function () {
+    console.log(`${this.rating}/5`);
+  },
+});
+
+course.printRating();
