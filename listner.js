@@ -41,19 +41,26 @@ const button = document.querySelector('button');
 //   console.log('This was clicked!');
 // };
 
-const buttonClickeHandler = (event) => {
-  console.log(event);
-};
+// const buttonClickeHandler = (event) => {
+//   console.log(event);
+// };
 
-const boundFn = buttonClickeHandler.bind(this);
+// const boundFn = buttonClickeHandler.bind(this);
 
 // button.addEventListener('click', buttonClickeHandler);
-button.addEventListener('mouseenter', buttonClickeHandler);
+// button.addEventListener('mouseenter', buttonClickeHandler);
 
-setTimeout(() => {
-  button.removeEventListener('click', buttonClickeHandler);
-}, 2000);
+// setTimeout(() => {
+//   button.removeEventListener('click', buttonClickeHandler);
+// }, 2000);
 
-window.addEventListener('scroll', (event) => {
+// // window.addEventListener('scroll', (event) => {
+// //   console.log(event);
+// // });
+
+const from = document.querySelector('form');
+
+from.addEventListener('submit', (event) => {
+  event.preventDefault();
   console.log(event);
 });
