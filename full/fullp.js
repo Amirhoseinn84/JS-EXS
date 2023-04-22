@@ -17,11 +17,9 @@ class Person extends AgedPerson {
       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
     );
     // setTimeout(this.greet, 3000);
-    // setInterval(() => {
-    //   console.log('Sending data...');
-    // }, 3000);
-    // clearInterval(this.greet);
-    // clearTimeout(this.greet);
+    const setTimeEl = setInterval(() => {
+      console.log('Sending data...');
+    }, 3000);
   }
 
   // greet = () => {
@@ -73,6 +71,8 @@ p.greet();
 
 const buttonElment = document.getElementById('btn');
 buttonElment.addEventListener('click', p.greet.bind(p));
+// clearInterval(p.greet);
+// clearTimeout(p.greet);
 
 const course = {
   title: 'JavaScript - The Complete Guide',
@@ -131,3 +131,13 @@ setTimeout(timeEl, 3000);
 setInterval(() => {
   console.log('Sending data...');
 }, 3000);
+
+// location.href = 'https://google.com';
+// history.back();
+// location.replace = 'https://google.com';
+
+console.log(navigator.userAgent);
+
+// navigator.geolocation.getCurrentPosition((data) => {
+//   console.log(data);
+// });
