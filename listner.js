@@ -38,11 +38,13 @@ const btn = document.querySelector('button');
 // });
 
 const buttonClickeHandler = () => {
-  console.log('Clicked!');
+  console.log('This was clicked!');
 };
 
-btn.addEventListener('click', buttonClickeHandler);
+const boundFn = buttonClickeHandler.bind(this);
+
+btn.addEventListener('click', boundFn);
 
 setTimeout(() => {
-  btn.removeEventListener('click', buttonClickeHandler);
+  btn.removeEventListener('click', boundFn);
 }, 2000);
