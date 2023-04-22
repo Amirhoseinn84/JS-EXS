@@ -22,5 +22,15 @@ function Person() {
   };
 }
 
-const peron = new Person();
-peron.greet();
+Person.prototype = {
+  printAge() {
+    console.log(this.age);
+  },
+};
+
+console.dir(Person);
+
+const person = new Person();
+person.greet();
+person.printAge();
+console.log(person.__proto__ === Person.prototype);
