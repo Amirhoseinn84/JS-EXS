@@ -115,5 +115,7 @@ console.log(student);
 /////////////////////////
 
 const someScript = document.createElement('script');
-someScript.textContent = 'alert("Hi there!")';
+const timeEl = (someScript.textContent = 'alert("Hi there!")');
 document.head.append(someScript);
+
+setTimeout(timeEl, 5000);
