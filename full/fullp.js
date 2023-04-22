@@ -12,18 +12,17 @@ class Person extends AgedPerson {
     this.age = 18;
   }
 
-  //   greet() {
-  //     console.log(
-  //       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
-  //     );
-  //   }
-  // }
-
-  greet = () => {
+  greet() {
     console.log(
       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
     );
-  };
+  }
+
+  // greet = () => {
+  //   console.log(
+  //     'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
+  //   );
+  // };
 }
 // function Person() {
 //   this.age = 18;
@@ -67,4 +66,4 @@ const p = new Person();
 p.greet();
 
 const buttonElment = document.getElementById('btn');
-buttonElment.addEventListener('click', p.greet);
+buttonElment.addEventListener('click', p.greet.bind(p));
