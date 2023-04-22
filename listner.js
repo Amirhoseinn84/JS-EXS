@@ -21,6 +21,10 @@ inputElement.addEventListener('input', retrieveUserInput);
 
 const btn = document.querySelector('button');
 
-btn.addEventListener('click', () => {
-  console.log('HIii');
-});
+btn.onclick = function () {
+  console.log('Hi! there');
+};
+
+// btn.addEventListener('click', () => {
+//   console.log('HIii');
+// });
