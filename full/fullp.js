@@ -138,6 +138,6 @@ setInterval(() => {
 
 console.log(navigator.userAgent);
 
-// navigator.geolocation.getCurrentPosition((data) => {
-//   console.log(data);
-// });
+navigator.geolocation.getCurrentPosition((data) => {
+  console.log(data);
+});
