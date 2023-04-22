@@ -111,3 +111,7 @@ Object.defineProperty(student, 'progress', {
 
 student.printProgress();
 console.log(student);
+
+const someScript = document.createElement('script');
+someScript.textContent = 'alert("Hi there!")';
+document.head.append(someScript);
