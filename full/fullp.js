@@ -16,10 +16,12 @@ class Person extends AgedPerson {
     console.log(
       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
     );
-    setTimeout(this.greet, 3000);
+    // setTimeout(this.greet, 3000);
     // setInterval(() => {
     //   console.log('Sending data...');
     // }, 3000);
+    // clearInterval(this.greet);
+    // clearTimeout(this.greet);
   }
 
   // greet = () => {
@@ -121,6 +123,8 @@ console.log(student);
 const someScript = document.createElement('script');
 const timeEl = (someScript.textContent = 'alert("Hi there!")');
 document.head.append(someScript);
+
+/////////////////////////
 
 setTimeout(timeEl, 3000);
 
