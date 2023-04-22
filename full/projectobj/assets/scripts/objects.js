@@ -66,4 +66,3 @@ const searchMovieHandler = () => {
 
 addMovieBtn.addEventListener('click', addMovieHandler);
 searchBtn.addEventListener('click', searchMovieHandler);
-searchBtn.addEventListener('click', searchMovieHandler);
