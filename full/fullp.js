@@ -1,58 +1,70 @@
-// class AgedPerson {
-//   printAge() {
-//     console.log(this.age);
-//   }
-// }
+class AgedPerson {
+  printAge() {
+    console.log(this.age);
+  }
+}
 
-// class Person extends AgedPerson {
-//   name = 'Amirhosein';
+class Person extends AgedPerson {
+  name = 'Amirhosein';
 
-//   constructor() {
-//     super();
-//     this.age = 18;
-//   }
+  constructor() {
+    super();
+    this.age = 18;
+  }
 
-//   greet() {
-//     console.log(
-//       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
-//     );
-//   }
-// }
+  //   greet() {
+  //     console.log(
+  //       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
+  //     );
+  //   }
+  // }
 
-function Person() {
-  this.age = 18;
-  this.name = 'Amirhosein';
-  this.greet = function () {
+  greet = () => {
     console.log(
       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
     );
   };
 }
+// function Person() {
+//   this.age = 18;
+//   this.name = 'Amirhosein';
+//   this.greet = function () {
+//     console.log(
+//       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
+//     );
+//   };
+// }
 
-Person.describe = function () {
-  console.log('Creating persons...');
-};
-
-// Person.prototype = {
-//   printAge() {
-//     console.log(this.age);
-//   },
+// Person.describe = function () {
+//   console.log('Creating persons...');
 // };
 
-Person.prototype.printAge = function () {
-  console.log(this.age);
-};
+// // Person.prototype = {
+// //   printAge() {
+// //     console.log(this.age);
+// //   },
+// // };
 
-console.dir(Person);
+// Person.prototype.printAge = function () {
+//   console.log(this.age);
+// };
 
-const person = new Person();
-person.greet();
-person.printAge();
-console.log(person);
-console.log(person.__proto__);
-// console.log(person.__proto__ === Person.prototype);
+// console.dir(Person);
 
-const person2 = new person.__proto__.constructor();
-console.log(person2);
+// const person = new Person();
+// person.greet();
+// person.printAge();
+// console.log(person);
+// console.log(person.__proto__);
+// // console.log(person.__proto__ === Person.prototype);
 
-console.dir(Object);
+// const person2 = new person.__proto__.constructor();
+// console.log(person2);
+
+// console.dir(Object.prototype);
+
+const p = new Person();
+p.greet();
+
+const buttonElment = document.getElementById('btn');
+buttonElment.addEventListener('click', p.greet);
