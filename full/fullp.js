@@ -84,10 +84,29 @@ Object.setPrototypeOf(course, {
 
 course.printRating();
 
-const student = Object.create({
-  printProgress: function () {
-    console.log(this.progress);
+const student = Object.create(
+  {
+    printProgress: function () {
+      console.log(this.progress);
+    },
   },
-});
+  {
+    name: {
+      configurable: true,
+      enumerable: true,
+      value: 'Amir',
+      writable: false,
+    },
+  }
+);
+
+student.name = 'Amir';
+
+// Object.defineProperty(student, 'progress', {
+//   configurable: true,
+//   enumerable: true,
+//   value: 0.8,
+//   writable: false,
+// });
 
 console.log(student);
