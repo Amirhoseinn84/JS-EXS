@@ -118,4 +118,4 @@ const someScript = document.createElement('script');
 const timeEl = (someScript.textContent = 'alert("Hi there!")');
 document.head.append(someScript);
 
-setTimeout(timeEl, 5000);
+setTimeout(timeEl, 3000);
