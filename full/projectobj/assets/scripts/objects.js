@@ -16,9 +16,9 @@ const renderMovies = (filter = '') => {
 
   const filteredMovies = !filter
     ? movies
-    : movies.filter(movie => movie.info.title.includes(filter));
+    : movies.filter((movie) => movie.info.title.includes(filter));
 
-  filteredMovies.forEach(movie => {
+  filteredMovies.forEach((movie) => {
     const movieEl = document.createElement('li');
     const { info, ...otherProps } = movie;
     console.log(otherProps);
@@ -50,9 +50,9 @@ const addMovieHandler = () => {
   const newMovie = {
     info: {
       title,
-      [extraName]: extraValue
+      [extraName]: extraValue,
     },
-    id: Math.random().toString()
+    id: Math.random().toString(),
   };
 
   movies.push(newMovie);
@@ -65,4 +65,5 @@ const searchMovieHandler = () => {
 };
 
 addMovieBtn.addEventListener('click', addMovieHandler);
+searchBtn.addEventListener('click', searchMovieHandler);
 searchBtn.addEventListener('click', searchMovieHandler);
