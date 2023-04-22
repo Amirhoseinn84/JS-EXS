@@ -144,3 +144,6 @@ navigator.geolocation.getCurrentPosition((data) => {
 
 const dateEL = new Date();
 console.log(dateEL.getTime());
+
+const dateEL2 = new Date('11 / 09 / 20');
+console.log(dateEL2);
