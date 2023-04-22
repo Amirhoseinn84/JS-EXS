@@ -1,36 +1,44 @@
-// class Person {
-//   name = 'Amirhosein';
+class AgedPerson {
+  printAge() {
+    console.log(this.age);
+  }
+}
 
-//   constructor() {
-//     this.age = 18;
-//   }
+class Person extends AgedPerson {
+  name = 'Amirhosein';
 
-//   greet() {
-//     console.log(
-//       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
-//     );
-//   }
-// }
+  constructor() {
+    super();
+    this.age = 18;
+  }
 
-function Person() {
-  this.age = 18;
-  this.name = 'Amirhosein';
-  this.greet = function () {
+  greet() {
     console.log(
       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
     );
-  };
+  }
 }
 
-Person.prototype = {
-  printAge() {
-    console.log(this.age);
-  },
-};
+// function Person() {
+//   this.age = 18;
+//   this.name = 'Amirhosein';
+//   this.greet = function () {
+//     console.log(
+//       'Hi, I am ' + this.name + ' and I am ' + this.age + ' years old.'
+//     );
+//   };
+// }
+
+// Person.prototype = {
+//   printAge() {
+//     console.log(this.age);
+//   },
+// };
 
 console.dir(Person);
 
 const person = new Person();
 person.greet();
 person.printAge();
-console.log(person.__proto__ === Person.prototype);
+console.log(person.__proto__);
+// console.log(person.__proto__ === Person.prototype);
