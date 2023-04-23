@@ -161,3 +161,22 @@ console.log(devide(2, 3));
 
 const devideEl = (x, y) => Math.pow(x, y);
 console.log(devideEl(2, 3));
+
+function productDescription(strings, productName, productPrice) {
+  console.log(strings);
+  console.log(productName);
+  console.log(productPrice);
+
+  let priceCategory = 'cheap';
+  if (productPrice > 20) {
+    priceCategory = 'fair';
+  }
+  return `${strings[0]}${productName}${strings[1]}${priceCategory}${strings[2]}`;
+}
+
+const prodName = 'Javascript Course';
+const prodePrice = 29.99;
+
+const productOutput = productDescription`This product (${prodName}) is ${prodePrice}.`;
+
+console.log(productOutput);
