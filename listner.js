@@ -128,3 +128,14 @@ const calculateIncomeTaxAmount = createTaxCalculator(0.25);
 
 console.log(calculateVatAmount(100));
 console.log(calculateVatAmount(200));
+
+function powerOf(x, n) {
+  let result = 1;
+
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+  return result;
+}
+
+console.log(powerOf(2, 3));
