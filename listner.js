@@ -167,7 +167,7 @@ function productDescription(strings, productName, productPrice) {
   console.log(productName);
   console.log(productPrice);
 
-  let priceCategory = 'Pretty cheap regarding it';
+  let priceCategory = 'Pretty cheap regarding its price';
   if (productPrice > 20) {
     priceCategory = 'fairly priced';
   }
