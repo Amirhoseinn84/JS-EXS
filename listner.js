@@ -183,8 +183,13 @@ console.log(productOutput);
 
 /////////////
 
-const regax = /^\S+@\S+\.\S+$/;
+// const regax = new RegExp();
+const emailRegax = /^\S+@\S+\.\S+$/;
+const regax1 = /(h|H)ello/;
+const regax2 = /.ello/;
 
-regax.test('test@test.com');
+// emailRegax.test('test@test.com');
 
-console.log(regax.test('test@test.com'));
+console.log(emailRegax.test('test@test.com'));
+console.log(regax1.test('Hello'));
+console.log(regax2.test('ello'));
