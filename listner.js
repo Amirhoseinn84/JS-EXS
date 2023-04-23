@@ -139,3 +139,12 @@ function powerOf(x, n) {
 }
 
 console.log(powerOf(2, 3));
+
+function devide(x, y) {
+  return Math.pow(x, y);
+}
+
+console.log(devide(2, 3));
+
+const devideEl = (x, y) => Math.pow(x, y);
+console.log(devideEl(2, 3));
