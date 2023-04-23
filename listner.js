@@ -127,4 +127,4 @@ const calculateVatAmount = createTaxCalculator(0.19);
 const calculateIncomeTaxAmount = createTaxCalculator(0.25);
 
 console.log(calculateVatAmount(100));
-console.log(calculateIncomeTaxAmount(200));
+console.log(calculateVatAmount(200));
