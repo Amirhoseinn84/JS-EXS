@@ -74,6 +74,15 @@ div.addEventListener('click', (event) => {
 
 button.addEventListener('click', (event) => {
   event.stopPropagation();
+  // event.stopImmediatePropagation();
   console.log('CLICKED BUTTON!');
+  console.log(event);
+});
+
+const listItems = document.querySelector('li');
+
+listItems.addEventListener('click', (event) => {
+  event.target.textContent = 'Amir';
+  listItems.style.backgroundColor = 'red';
   console.log(event);
 });
