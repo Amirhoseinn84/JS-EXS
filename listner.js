@@ -92,11 +92,11 @@ const listItems = document.querySelector('li');
 const listItems2 = document.getElementById('item-2');
 const listItems3 = document.querySelector('ul');
 
-listItems.addEventListener('click', (event) => {
-  event.target.textContent = 'Amir';
-  listItems.style.backgroundColor = 'red';
-  console.log(event);
-});
+// listItems.addEventListener('click', (event) => {
+//   event.target.textContent = 'Amir';
+//   listItems.style.backgroundColor = 'red';
+//   console.log(event);
+// });
 
 // listItems2.addEventListener('click', (event) => {
 //   event.target.textContent = 'Amir';
