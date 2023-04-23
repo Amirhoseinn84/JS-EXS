@@ -129,13 +129,21 @@ const calculateIncomeTaxAmount = createTaxCalculator(0.25);
 console.log(calculateVatAmount(100));
 console.log(calculateVatAmount(200));
 
-function powerOf(x, n) {
-  let result = 1;
+// function powerOf(x, n) {
+//   let result = 1;
 
-  for (let i = 0; i < n; i++) {
-    result *= x;
-  }
-  return result;
+//   for (let i = 0; i < n; i++) {
+//     result *= x;
+//   }
+//   return result;
+// }
+
+function powerOf(x, n) {
+  // if (n === 1) {
+  //   return x;
+  // }
+  // return x * powerOf(x, n - 1);
+  return n === 1 ? x : x * powerOf(x, n - 1);
 }
 
 console.log(powerOf(2, 3));
@@ -144,6 +152,11 @@ function devide(x, y) {
   return Math.pow(x, y);
 }
 
+function devide2(x, y) {
+  return x ** y;
+}
+
+console.log(devide2(2, 3));
 console.log(devide(2, 3));
 
 const devideEl = (x, y) => Math.pow(x, y);
