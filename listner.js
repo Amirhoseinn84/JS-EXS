@@ -96,7 +96,9 @@ listItems.addEventListener('click', (event) => {
 // });
 
 listItems3.addEventListener('click', (event) => {
-  event.target.textContent = 'Amirhosein';
-  // listItems3.style.color = 'blue';
+  // event.target.textContent = 'Amirhosein';
+  event.target.closest('li').textContent = 'Amirhosein';
+  // // listItems3.style.color = 'blue';
   console.log(event);
+  console.log(event.currentTarget);
 });
