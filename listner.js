@@ -180,3 +180,11 @@ const prodePrice = 29.99;
 const productOutput = productDescription`This product (${prodName}) is ${prodePrice}.`;
 
 console.log(productOutput);
+
+/////////////
+
+const regax = /^\S+@\S+\.\S+$/;
+
+regax.test('test@test.com');
+
+console.log(regax.test('test@test.com'));
