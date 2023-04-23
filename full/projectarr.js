@@ -249,4 +249,3 @@ peopleData.set(people, 'Extract info!');
 people = null;
 
 console.log(peopleData);
-console.log(peopleData);
