@@ -72,11 +72,20 @@ div.addEventListener('click', (event) => {
   console.log(event);
 });
 
-button.addEventListener('click', (event) => {
+// button.addEventListener('click', (event) => {
+//   event.stopPropagation();
+//   // event.stopImmediatePropagation();
+//   console.log('CLICKED BUTTON!');
+//   console.log(event);
+//   console.log(this);
+// });
+
+button.addEventListener('click', function (event) {
   event.stopPropagation();
   // event.stopImmediatePropagation();
   console.log('CLICKED BUTTON!');
   console.log(event);
+  console.log(this);
 });
 
 const listItems = document.querySelector('li');
@@ -101,4 +110,6 @@ listItems3.addEventListener('click', (event) => {
   // // listItems3.style.color = 'blue';
   console.log(event);
   console.log(event.currentTarget);
+  // from.submit();
+  button.click();
 });
