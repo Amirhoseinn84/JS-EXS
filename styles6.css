@@ -61,3 +61,8 @@ h3 {
   font-size: 1rem;
   margin: 1.5rem 25rem;
 }
+
+a {
+  text-decoration: none;
+  color: rgb(105, 61, 187);
+}
