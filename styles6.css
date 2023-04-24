@@ -37,6 +37,7 @@ li {
   justify-content: space-between;
   padding: 0 8rem;
   height: 52rem;
+  width: 104rem;
   background: linear-gradient(90deg, rgb(227, 255, 253), rgb(10, 134, 126));
 }
 
@@ -67,4 +68,23 @@ h3 {
 a {
   text-decoration: none;
   color: rgb(105, 61, 187);
+}
+
+footer {
+  background-color: aqua;
+  width: 120rem;
+  height: 5rem;
+}
+
+footer ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  margin: 1.8rem 27rem;
 }
