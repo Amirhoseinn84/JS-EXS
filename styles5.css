@@ -59,6 +59,14 @@ li {
 }
 
 button {
-  padding: 0.3rem;
-  margin: 10px 0 0 16rem;
+  padding: 0.4rem;
+  width: 5rem;
+  margin: 10px 0 0 15rem;
+  background-color: #b13c3c;
+  border: 1px solid #b13c3c;
+}
+
+button:hover {
+  background-color: #a14747;
+  cursor: pointer;
 }
