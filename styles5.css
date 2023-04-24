@@ -52,3 +52,13 @@ ul {
 li {
   list-style-type: none;
 }
+
+#seccond-hr {
+  width: 8rem;
+  border: 1.5px solid rgb(224, 79, 79);
+}
+
+button {
+  padding: 0.3rem;
+  margin: 10px 0 0 16rem;
+}
