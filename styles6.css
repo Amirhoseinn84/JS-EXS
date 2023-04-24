@@ -66,7 +66,9 @@ p {
 
 h3 {
   font-size: 1rem;
-  margin: 1.5rem 25rem;
+  margin: 1.5rem 22rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
