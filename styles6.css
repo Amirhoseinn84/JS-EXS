@@ -32,10 +32,12 @@ li {
   margin: 0 1.5rem;
 }
 
-main {
+#main-content {
   display: flex;
   justify-content: space-between;
   padding: 0 8rem;
+  height: 52rem;
+  background: linear-gradient(90deg, rgb(227, 255, 253), rgb(10, 134, 126));
 }
 
 #card1,
@@ -44,7 +46,7 @@ main {
   height: 16rem;
   padding: 0.5rem;
   margin: 4.5rem 10rem;
-  background-color: aqua;
+  background-color: rgb(10, 221, 221);
   border-radius: 0.8rem;
 }
 
