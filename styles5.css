@@ -26,7 +26,19 @@ h2 {
 input {
   padding: 0.25rem;
   margin: 0 0 0 1rem;
-  width: 10rem;
+  width: 11rem;
+}
+
+#email-el {
+  margin: 0 0 0 2.8rem;
+}
+
+#age-el {
+  margin: 0 0 0 3.5rem;
+}
+
+#date-el {
+  margin: 0 0 0 3.1rem;
 }
 
 span {
