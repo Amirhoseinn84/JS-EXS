@@ -64,14 +64,9 @@ p {
   letter-spacing: 0.05rem;
 }
 
-h3 {
-  font-size: 1rem;
-  margin: 1.5rem 22rem;
-  display: flex;
-  justify-content: space-between;
-}
-
 a {
+  font-size: 1rem;
+  margin: 1.5rem 24rem;
   text-decoration: none;
   color: rgb(105, 61, 187);
 }
