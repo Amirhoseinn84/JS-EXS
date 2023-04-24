@@ -8,9 +8,13 @@ header {
   width: 120rem;
   height: 6rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: rgb(21, 76, 128);
+  /* position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box; */
 }
 
 h1 {
@@ -71,9 +75,9 @@ a {
 }
 
 footer {
-  background-color: aqua;
+  background-color: rgb(15, 56, 56);
   width: 120rem;
-  height: 5rem;
+  height: 6rem;
 }
 
 footer ul {
@@ -87,4 +91,9 @@ footer ul {
 
 footer ul li {
   margin: 1.8rem 27rem;
+  color: aqua;
+}
+
+#list-1 {
+  margin: 2rem 28rem;
 }
