@@ -42,9 +42,10 @@ header ul li {
 #main-content {
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   height: 47.5rem;
-  width: 108rem;
+  /* width: 108rem; */
+  max-width: 80%;
   /* background: linear-gradient(90deg, rgb(227, 255, 253), rgb(10, 134, 126)); */
 }
 
