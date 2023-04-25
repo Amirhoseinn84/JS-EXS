@@ -13,8 +13,9 @@ header {
 }
 
 h1 {
-  font-family: 'Sigmar', cursive;
-  color: aqua;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.25rem;
+  color: rgb(255, 255, 255);
   padding: 0.3rem 3rem;
   font-size: 2rem;
 }
@@ -58,7 +59,6 @@ h2 {
 
 p {
   font-family: 'Fira Sans', sans-serif;
-  /* letter-spacing: 0.05rem; */
 }
 
 a {
