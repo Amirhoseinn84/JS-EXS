@@ -27,7 +27,13 @@ div {
   margin: 2rem 2rem;
 }
 
-.div-2 {
+/* .div-2 {
+  background-color: rgb(224, 166, 57);
+  border: none;
+  color: white;
+} */
+
+div:hover {
   background-color: rgb(224, 166, 57);
   border: none;
   color: white;
