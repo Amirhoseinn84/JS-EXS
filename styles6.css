@@ -53,6 +53,7 @@ header ul li {
 }
 
 h2 {
+  font-family: 'Fira Sans', sans-serif;
   text-align: center;
   padding: 1.2rem;
 }
@@ -85,6 +86,7 @@ footer ul {
 }
 
 footer ul li {
+  font-family: 'Fira Sans', sans-serif;
   margin: 1.8rem 27rem;
   color: aqua;
 }
