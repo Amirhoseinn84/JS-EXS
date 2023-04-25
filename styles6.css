@@ -81,6 +81,7 @@ footer ul {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 footer ul li {
