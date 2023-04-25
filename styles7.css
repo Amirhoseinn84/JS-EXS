@@ -3,9 +3,24 @@ body {
 }
 
 #section-1 {
-  background-color: rgb(204, 151, 53);
+  background-color: rgb(224, 166, 57);
+  color: white;
+  width: 103rem;
+  padding: 0.3rem 1rem;
+  margin: 6rem 6.7rem -4.3rem;
+  text-align: left;
+}
+
+#section-2 {
+  border: 1.8px solid orange;
   width: 103rem;
   padding: 0.3rem 1rem;
   margin: 6rem auto;
   text-align: left;
+}
+
+div {
+  border: 1.8px solid rgb(41, 22, 87);
+  padding: 0.2rem 1rem;
+  margin: 2rem auto;
 }
