@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+}
+
+#section-1 {
+  background-color: rgb(204, 151, 53);
+  width: 103rem;
+  padding: 0.3rem 1rem;
+  margin: 6rem auto;
+  text-align: left;
+}
