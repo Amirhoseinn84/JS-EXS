@@ -5,19 +5,15 @@ body {
 }
 
 header {
-  width: 120rem;
+  width: 124rem;
   height: 6rem;
   display: flex;
   justify-content: space-between;
   background-color: rgb(21, 76, 128);
-  /* position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  box-sizing: border-box; */
 }
 
 h1 {
+  font-family: 'Sigmar', cursive;
   color: aqua;
   padding: 0.3rem 3rem;
   font-size: 2rem;
@@ -25,7 +21,7 @@ h1 {
 
 #Main-Element {
   color: aqua;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 7rem;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -41,7 +37,7 @@ header ul li {
   justify-content: space-between;
   padding: 0 8rem;
   height: 52rem;
-  width: 104rem;
+  width: 108rem;
   background: linear-gradient(90deg, rgb(227, 255, 253), rgb(10, 134, 126));
 }
 
@@ -61,7 +57,8 @@ h2 {
 }
 
 p {
-  letter-spacing: 0.05rem;
+  font-family: 'Fira Sans', sans-serif;
+  /* letter-spacing: 0.05rem; */
 }
 
 a {
@@ -73,7 +70,7 @@ a {
 
 footer {
   background-color: rgb(15, 56, 56);
-  width: 120rem;
+  width: 124rem;
   height: 6rem;
 }
 
