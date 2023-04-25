@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  width: 124rem;
+  width: 121rem;
   height: 6rem;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ header ul li {
   padding: 0 8rem;
   height: 52rem;
   width: 108rem;
-  background: linear-gradient(90deg, rgb(227, 255, 253), rgb(10, 134, 126));
+  /* background: linear-gradient(90deg, rgb(227, 255, 253), rgb(10, 134, 126)); */
 }
 
 #card1,
@@ -75,7 +75,7 @@ a {
 
 footer {
   background-color: rgb(15, 56, 56);
-  width: 124rem;
+  width: 121rem;
   height: 6rem;
 }
 
