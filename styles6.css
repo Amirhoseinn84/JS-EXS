@@ -15,6 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(21, 76, 128);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 h1 {
@@ -49,22 +50,26 @@ header ul li {
 
 #card1,
 #card2 {
-  width: 30rem;
-  height: 16rem;
+  width: 31rem;
+  height: 17rem;
   padding: 0.5rem;
   margin: 4.5rem 10rem;
-  background-color: rgb(10, 221, 221);
+  /* background-color: rgb(10, 221, 221); */
+  border: 2px solid rgb(21, 76, 128);
+  color: white;
+  text-align: left;
   border-radius: 0.8rem;
 }
 
 h2 {
   font-family: 'Fira Sans', sans-serif;
   text-align: center;
-  padding: 1.2rem;
+  padding: 1.1rem;
 }
 
 p {
   font-family: 'Fira Sans', sans-serif;
+  padding: 0.4rem;
 }
 
 a {
