@@ -57,6 +57,7 @@ header ul li {
   margin: 4.5rem 10rem;
   /* background-color: rgb(10, 221, 221); */
   border: 2px solid rgb(21, 76, 128);
+  /* border-bottom: 2px solid red; */
   color: white;
   text-align: left;
   border-radius: 0.8rem;
