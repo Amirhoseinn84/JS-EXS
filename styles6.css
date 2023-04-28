@@ -82,6 +82,10 @@ a {
   color: rgb(105, 61, 187);
 }
 
+a:active {
+  color: red;
+}
+
 footer {
   background-color: rgb(15, 56, 56);
   width: 100%;
