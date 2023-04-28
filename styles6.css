@@ -84,6 +84,10 @@ h2::after {
   padding: 0.3rem;
   margin: 1rem;
   background-color: rgb(21, 76, 128);
+  position: relative;
+  top: -3rem;
+  right: -14rem;
+  border-radius: 0.5rem;
 }
 
 h2::first-letter {
