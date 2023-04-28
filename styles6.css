@@ -79,6 +79,11 @@ h2 {
   padding: 1.2rem;
 }
 
+h2::after {
+  content: 'TOP';
+  padding: 1rem;
+}
+
 h2::first-letter {
   color: rgb(224, 79, 79);
 }
