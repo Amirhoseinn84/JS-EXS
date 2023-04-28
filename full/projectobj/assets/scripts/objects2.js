@@ -104,4 +104,3 @@ const members = {
 };
 
 console.log(members.getTeamMember());
-console.log(members.getTeamMember());
