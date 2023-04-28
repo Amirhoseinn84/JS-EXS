@@ -87,7 +87,8 @@ p {
 
 a {
   font-size: 1rem;
-  margin: 1.5rem 23rem;
+  margin: 0.5rem 23rem;
+  display: block;
   text-decoration: none;
   color: rgb(105, 61, 187);
 }
