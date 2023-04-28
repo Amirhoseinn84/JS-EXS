@@ -80,8 +80,10 @@ h2 {
 }
 
 h2::after {
-  content: 'TOP';
-  padding: 1rem;
+  content: 'WEB';
+  padding: 0.3rem;
+  margin: 1rem;
+  background-color: rgb(21, 76, 128);
 }
 
 h2::first-letter {
