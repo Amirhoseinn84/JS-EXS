@@ -79,6 +79,7 @@ h2 {
   font-family: 'Fira Sans', sans-serif;
   text-align: center;
   padding: 1.2rem;
+  float: right;
 }
 
 h2::after {
