@@ -65,7 +65,7 @@ header ul li {
 #card2 {
   width: 31rem;
   height: 17rem;
-  padding: 1.5rem;
+  padding: 2.5rem;
   margin: 4.5rem 10rem;
   /* background-color: rgb(10, 221, 221); */
   border: 2px solid rgb(21, 76, 128);
@@ -88,8 +88,8 @@ h2::after {
   margin: 1rem;
   background-color: rgb(21, 76, 128);
   position: relative;
-  top: -3rem;
-  right: -5rem;
+  top: -4rem;
+  right: -6rem;
   border-radius: 0.5rem;
 }
 
@@ -100,7 +100,7 @@ h2::first-letter {
 p {
   font-family: 'Fira Sans', sans-serif;
   padding: 0.4rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
 p::first-letter {
