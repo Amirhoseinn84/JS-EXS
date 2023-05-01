@@ -24,6 +24,7 @@ form {
 } */
 
 body {
+  font-family: sans-serif;
   color: #343a40;
   line-height: 1;
   display: flex;
@@ -33,5 +34,13 @@ body {
 table {
   width: 50rem;
   margin-top: 6.25rem;
-  background-color: red;
+  border: 1px solid #343a40;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #343a40;
+  padding: 16px 24px;
+  text-align: left;
 }
