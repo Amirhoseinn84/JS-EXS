@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 50rem;
+  margin-top: 8rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px 24px;
+}
+
+thead th {
+  background-color: red;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: blue;
+}
