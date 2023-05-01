@@ -22,3 +22,16 @@ form {
   border-bottom-right-radius: 1rem;
   border-top-left-radius: 1rem;
 } */
+
+body {
+  color: #343a40;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 50rem;
+  margin-top: 6.25rem;
+  background-color: red;
+}
