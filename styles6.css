@@ -26,7 +26,8 @@ header {
   align-items: center;
   /* gap: 75rem; */
   justify-content: space-between;
-  background-color: rgb(21, 76, 128);
+  /* background-color: rgb(21, 76, 128); */
+  background-color: #2c2020;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
