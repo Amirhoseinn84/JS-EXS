@@ -8,6 +8,15 @@ body {
   font-family: sans-serif;
   color: #343a40;
   line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 200px;
 }
 
 .btn {
@@ -23,7 +32,8 @@ body {
   background-color: #087f5b;
 }
 
-.btn-icon:hover {
+.btn-icon:hover,
+.btn:hover {
   stroke: #fff;
 }
 
@@ -47,7 +57,12 @@ body {
 }
 
 .page-link:hover,
-.page-link:active {
+.page-link:active,
+.page-link.page-link--current {
   background-color: #087f5b;
   color: #fff;
+}
+
+.dots {
+  color: #868e96;
 }
