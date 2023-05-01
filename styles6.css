@@ -12,6 +12,11 @@ body {
   border-right: 1.5px solid rgb(21, 76, 128);
 }
 
+/* .container {
+  margin: 0 auto;
+  width: 1200px;
+} */
+
 header {
   /* width: 121rem; */
   width: 100%;
