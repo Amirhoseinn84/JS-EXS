@@ -74,7 +74,7 @@ header ul li {
 
 #card1,
 #card2 {
-  width: 31rem;
+  max-width: 33rem;
   height: 17rem;
   padding: 2.5rem;
   margin: 4.5rem 10rem;
@@ -157,8 +157,14 @@ footer ul li {
   margin: 2rem 28rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
   #main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
