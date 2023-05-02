@@ -27,13 +27,19 @@ body {
   font-family: sans-serif;
   color: #343a40;
   line-height: 1;
-  display: flex;
-  justify-content: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* display: flex;
+  justify-content: center; */
+  display: grid;
+  place-items: center;
 }
 
 table {
   width: 50rem;
-  margin-top: 6.25rem;
+  margin-top: 8.25rem;
   /* border: 1px solid #343a40; */
   border-collapse: collapse;
   font-size: 18px;
