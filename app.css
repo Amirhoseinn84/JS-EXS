@@ -1,0 +1,52 @@
+h2{
+    color: indigo;
+}
+
+h3{
+    color: red;
+    background-color: blue;
+}
+
+button{
+    color:rgb(94, 53, 161);
+    background-color: rgb(236, 65, 65);
+}
+
+p{
+    color: chartreuse;
+    background: rgb(0, 81, 255);
+    text-align: left;
+    font-weight: bold;
+}
+
+body{
+    background-color: #c2d0ff;
+    font-weight: bold;
+    line-height: 2;
+}
+
+h1{
+    text-align: center;
+    width: 130%;
+    font-weight: 400;
+    text-decoration: red underline;
+    letter-spacing: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    font-size: 10px;
+}
+
+h3,h4{
+    color: rgb(7, 7, 7);
+}
+
+#requests{
+    color: black;
+    background-color: brown;
+}

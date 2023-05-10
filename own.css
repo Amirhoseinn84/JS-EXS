@@ -1,0 +1,32 @@
+body {
+    background-color: blue;
+}
+
+.Header {
+    color: rgb(221, 10, 10);
+}
+
+.Own {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstclass {
+    color: blueviolet;
+}
+
+button {
+    background-color: chartreuse;
+    border-radius: 50px;
+    margin: 10px 5px;
+    padding: 15px 25px;
+    border: 3px solid #cf2c2c;
+}
+
+button:hover {
+    background-color: #e1f1ff;
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em -0.4em #f9fffd;
+}
