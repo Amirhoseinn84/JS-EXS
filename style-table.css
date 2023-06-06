@@ -24,7 +24,7 @@ form {
 } */
 body {
   font-family: sans-serif;
-  color: #343a40;
+  color: #357abe;
   line-height: 1;
   /* position: absolute;
   top: 50%;
@@ -43,28 +43,26 @@ table {
   border-collapse: collapse;
   font-size: 18px;
 }
-
-th,
-td {
-  /* border: 1px solid #343a40; */
+table th,
+table td {
   padding: 16px 24px;
   text-align: left;
 }
-
-thead tr {
-  background-color: #087f5b;
+table thead {
+  background-color: #357abe;
   color: #fff;
 }
-
-thead th {
+table thead td {
+  padding: 16px 24px;
+}
+table thead th {
+  text-align: left;
   width: 25%;
 }
-
-tbody tr:nth-child(odd) {
+table tbody tr:nth-child(odd) {
   background-color: #f8f9fa;
 }
-
-tbody tr:nth-child(even) {
+table tbody tr:nth-child(even) {
   background-color: #e9ecef;
 }
 

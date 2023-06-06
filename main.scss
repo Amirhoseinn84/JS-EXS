@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+$color-primary: #357abe;
+
 /* body {
   background-color: rgb(172, 163, 180);
 }
@@ -22,10 +24,9 @@ form {
   border-bottom-right-radius: 1rem;
   border-top-left-radius: 1rem;
 } */
-
 body {
   font-family: sans-serif;
-  color: #343a40;
+  color: $color-primary;
   line-height: 1;
   /* position: absolute;
   top: 50%;
@@ -43,28 +44,60 @@ table {
   /* border: 1px solid #343a40; */
   border-collapse: collapse;
   font-size: 18px;
+
+  th,
+  td {
+    padding: 16px 24px;
+    text-align: left;
+  }
+
+  thead {
+    background-color: $color-primary;
+    color: #fff;
+
+    td {
+      padding: 16px 24px;
+    }
+
+    th {
+      text-align: left;
+      width: 25%;
+    }
+  }
+
+  tbody {
+    tr:nth-child(odd) {
+      background-color: #f8f9fa;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e9ecef;
+    }
+  }
 }
 
-th,
-td {
-  /* border: 1px solid #343a40; */
-  padding: 16px 24px;
-  text-align: left;
-}
+// th,
+// td {
+//   /* border: 1px solid #343a40; */
+//   padding: 16px 24px;
+//   text-align: left;
+// }
 
-thead tr {
-  background-color: #087f5b;
-  color: #fff;
-}
+// thead tr {
+//   background-color: $color-primary;
+//   color: #fff;
+// }
 
-thead th {
-  width: 25%;
-}
+// thead {
+//   th {
+//     width: 25%;
+//   }
+// }
 
-tbody tr:nth-child(odd) {
-  background-color: #f8f9fa;
-}
+// tbody tr:nth-child(odd) {
+//   background-color: #f8f9fa;
+// }
 
-tbody tr:nth-child(even) {
-  background-color: #e9ecef;
-}
+// tbody tr:nth-child(even) {
+//   background-color: #e9ecef;
+// }
