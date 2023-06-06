@@ -21,6 +21,8 @@ $color-main-2: #e9ecef;
   font-family: sans-serif;
   color: $color-primary;
   line-height: 1;
+  display: grid;
+  place-items: center;
 }
 
 @mixin color-style($color) {
@@ -76,8 +78,6 @@ body {
   transform: translate(-50%, -50%); */
   /* display: flex;
   justify-content: center; */
-  display: grid;
-  place-items: center;
 }
 
 table {
