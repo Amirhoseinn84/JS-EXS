@@ -24,7 +24,7 @@ form {
 } */
 body {
   font-family: sans-serif;
-  color: #357abe;
+  color: #133250;
   line-height: 1;
   /* position: absolute;
   top: 50%;
@@ -49,7 +49,7 @@ table td {
   text-align: left;
 }
 table thead {
-  background-color: #357abe;
+  background-color: #133250;
   color: #fff;
 }
 table thead td {

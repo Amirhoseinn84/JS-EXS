@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-$color-primary: #357abe;
+$color-primary: #133250;
 
 /* body {
   background-color: rgb(172, 163, 180);
@@ -66,12 +66,14 @@ table {
   }
 
   tbody {
-    tr:nth-child(odd) {
-      background-color: #f8f9fa;
-    }
+    tr {
+      &:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
 
-    tr:nth-child(even) {
-      background-color: #e9ecef;
+      &:nth-child(even) {
+        background-color: #e9ecef;
+      }
     }
   }
 }
