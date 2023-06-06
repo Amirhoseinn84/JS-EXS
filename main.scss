@@ -5,6 +5,8 @@
 }
 
 $color-primary: #133250;
+$color-main-1: #f8f9fa;
+$color-main-2: #e9ecef;
 
 @mixin th {
   text-align: left;
@@ -17,12 +19,8 @@ $color-primary: #133250;
   line-height: 1;
 }
 
-@mixin color-style-1 {
-  background-color: #f8f9fa;
-}
-
-@mixin color-style-2 {
-  background-color: #e9ecef;
+@mixin color-style($color) {
+  background-color: $color;
 }
 
 @mixin border-size {
@@ -90,11 +88,11 @@ table {
   tbody {
     tr {
       &:nth-child(odd) {
-        @include color-style-1;
+        @include color-style($color-main-1);
       }
 
       &:nth-child(even) {
-        @include color-style-2;
+        @include color-style($color-main-2);
       }
     }
   }
