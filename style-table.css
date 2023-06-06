@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+table tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
 /* body {
   background-color: rgb(172, 163, 180);
 }
@@ -56,12 +63,6 @@ table thead {
 }
 table thead td {
   padding: 16px 24px;
-}
-table tbody tr:nth-child(odd) {
-  background-color: #f8f9fa;
-}
-table tbody tr:nth-child(even) {
-  background-color: #e9ecef;
 }
 
 /*# sourceMappingURL=style-table.css.map */

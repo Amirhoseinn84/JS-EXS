@@ -8,6 +8,10 @@ $color-primary: #133250;
 $color-main-1: #f8f9fa;
 $color-main-2: #e9ecef;
 
+@function multi($a, $b) {
+  @return $a * $b;
+}
+
 @mixin th {
   text-align: left;
   width: 25%;
@@ -31,7 +35,19 @@ $color-main-2: #e9ecef;
   width: 50rem;
   margin-top: 8.25rem;
   border-collapse: collapse;
-  font-size: 18px;
+  font-size: multi(2, 9) * 1px;
+}
+
+%table-placeholder {
+  tr {
+    &:nth-child(odd) {
+      @include color-style($color-main-1);
+    }
+
+    &:nth-child(even) {
+      @include color-style($color-main-2);
+    }
+  }
 }
 
 /* body {
@@ -86,15 +102,7 @@ table {
   }
 
   tbody {
-    tr {
-      &:nth-child(odd) {
-        @include color-style($color-main-1);
-      }
-
-      &:nth-child(even) {
-        @include color-style($color-main-2);
-      }
-    }
+    @extend %table-placeholder;
   }
 }
 
