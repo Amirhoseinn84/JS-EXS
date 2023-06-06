@@ -6,6 +6,36 @@
 
 $color-primary: #133250;
 
+@mixin th {
+  text-align: left;
+  width: 25%;
+}
+
+@mixin style-color-font {
+  font-family: sans-serif;
+  color: $color-primary;
+  line-height: 1;
+}
+
+@mixin color-style-1 {
+  background-color: #f8f9fa;
+}
+
+@mixin color-style-2 {
+  background-color: #e9ecef;
+}
+
+@mixin border-size {
+  padding: 16px 24px;
+}
+
+@mixin table-content {
+  width: 50rem;
+  margin-top: 8.25rem;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
 /* body {
   background-color: rgb(172, 163, 180);
 }
@@ -25,9 +55,7 @@ form {
   border-top-left-radius: 1rem;
 } */
 body {
-  font-family: sans-serif;
-  color: $color-primary;
-  line-height: 1;
+  @include style-color-font;
   /* position: absolute;
   top: 50%;
   left: 50%;
@@ -39,15 +67,12 @@ body {
 }
 
 table {
-  width: 50rem;
-  margin-top: 8.25rem;
+  @include table-content;
   /* border: 1px solid #343a40; */
-  border-collapse: collapse;
-  font-size: 18px;
 
   th,
   td {
-    padding: 16px 24px;
+    @include border-size;
     text-align: left;
   }
 
@@ -56,23 +81,20 @@ table {
     color: #fff;
 
     td {
-      padding: 16px 24px;
+      @include border-size;
     }
 
-    th {
-      text-align: left;
-      width: 25%;
-    }
+    @include th;
   }
 
   tbody {
     tr {
       &:nth-child(odd) {
-        background-color: #f8f9fa;
+        @include color-style-1;
       }
 
       &:nth-child(even) {
-        background-color: #e9ecef;
+        @include color-style-2;
       }
     }
   }
