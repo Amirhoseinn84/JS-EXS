@@ -1,43 +1,14 @@
+@import './_variables.scss';
+@import './mixins.scss';
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-$color-primary: #133250;
-$color-main-1: #f8f9fa;
-$color-main-2: #e9ecef;
-
 @function multi($a, $b) {
   @return $a * $b;
-}
-
-@mixin th {
-  text-align: left;
-  width: 25%;
-}
-
-@mixin style-color-font {
-  font-family: sans-serif;
-  color: $color-primary;
-  line-height: 1;
-  display: grid;
-  place-items: center;
-}
-
-@mixin color-style($color) {
-  background-color: $color;
-}
-
-@mixin border-size {
-  padding: 16px 24px;
-}
-
-@mixin table-content {
-  width: 50rem;
-  margin-top: 8.25rem;
-  border-collapse: collapse;
-  font-size: multi(2, 9) * 1px;
 }
 
 %table-placeholder {

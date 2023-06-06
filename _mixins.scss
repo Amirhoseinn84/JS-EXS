@@ -1,0 +1,27 @@
+@mixin th {
+  text-align: left;
+  width: 25%;
+}
+
+@mixin style-color-font {
+  font-family: sans-serif;
+  color: $color-primary;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+
+@mixin color-style($color) {
+  background-color: $color;
+}
+
+@mixin border-size {
+  padding: 16px 24px;
+}
+
+@mixin table-content {
+  width: 50rem;
+  margin-top: 8.25rem;
+  border-collapse: collapse;
+  font-size: multi(2, 9) * 1px;
+}
